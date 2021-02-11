@@ -375,7 +375,6 @@ body {
   background-color: rgb(48, 48, 48);
 }
 
-
 #homePage-onlineExperiences-body {
   margin-top: 3vw;
   display: flex;
@@ -448,4 +447,55 @@ body {
 .homePage-onlineExperiences-container-for-second-containers {
   display: flex;
   justify-content: space-evenly;
+}
+#airbnb-logo-exp {
+  color: rgb(255, 90, 95);
+  height: 35px;
+  width: 35px;
+}
+#online-exp-logo {
+  display: flex;
+  color: rgb(255, 90, 95);
+  font-size: 1.3vw;
+  font-weight: 900;
+  margin-left: 80px;
+  margin-top: 30px;
+  height: 64px;
+  width: 118px;
+}
+.logo-text {
+  margin-top: 3px;
+}
+#online-exp-nav {
+  display: flex;
+}
+#becomeHost-language-exp {
+  display: flex;
+  margin-left: 1000px;
+}
+#onlineExpPage-hostButton {
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+}
+#profileInHeader-exp {
+  background-color: whitesmoke;
+  color: grey;
+  width: 5.5vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30vw;
+  margin-left: 1vw;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+  margin-top: 25px;
+}
+#profileInHeader-exp:hover {
+  box-shadow: 1px 1px 3px 3px #969696;
+}
+.hr-exp {
+  box-shadow: 1px 1px 2px 2px #969696;
+  color: black;
 }
