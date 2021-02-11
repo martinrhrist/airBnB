@@ -96,6 +96,8 @@ button {
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+/* header */
 #homePage-header {
   background-image: url("pictures/main-picture.jpg");
   background-repeat: no-repeat;
@@ -204,6 +206,10 @@ body {
   background-color: honeydew;
   border-radius: 4vw;
 }
+#filter {
+  display: flex;
+}
+
 #experiencesPage-filter-menu {
   display: flex;
   width: 65vw;
@@ -260,6 +266,7 @@ body {
   outline: none;
 }
 
+/* Section Towns */
 #homePage-towns {
   margin-top: 5vw;
   display: flex;
@@ -291,6 +298,7 @@ body {
   font-weight: bold;
 }
 
+/* Section Live Anywhere */
 #homePage-liveAnywhere {
   margin-top: 5vw;
   margin-bottom: 5vw;
@@ -303,6 +311,7 @@ body {
   height: 20vw;
   border-radius: 1vw;
 }
+
 .homePage-liveAnywhere-container {
   cursor: pointer;
 }
@@ -311,16 +320,132 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
 #homePage-liveAnywhere > p {
   font-size: 3vw;
   font-weight: bold;
   margin-left: 4vw;
   margin-bottom: 2vw;
 }
+
 .homePage-liveAnywhere-container > p {
   margin-top: 0.5vw;
   font-weight: bold;
 }
-#filter {
+
+/* Section Online Experiences */
+#homePage-onlineExperiences {
+  background-color: black;
+}
+
+#homePage-onlineExperiences-head {
+  padding-top: 4vw;
   display: flex;
+  justify-content: space-between;
+}
+
+#homePage-onlineExperiences-allElements {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5vw;
+}
+
+.homePage-onlineExperiences-title {
+  font-size: 3vw;
+  color: white;
+}
+
+.homePage-onlineExperiences-description {
+  font-size: 1.5vw;
+  color: white;
+}
+
+#homePage-onlineExperiences-button {
+  display: flex;
+  border: 0.1vw solid white;
+  color: white;
+  font-size: 1vw;
+  padding: 1.5vw 1.5vw;
+  border-radius: 3vw;
+  cursor: pointer;
+}
+
+#homePage-onlineExperiences-button:hover {
+  background-color: rgb(48, 48, 48);
+}
+
+
+#homePage-onlineExperiences-body {
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.homePage-onlineExperiences-main-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.homePage-onlineExperiences-main-container > img {
+  width: 45vw;
+  height: 45vw;
+  border-radius: 2vw;
+  margin-right: 2vw;
+}
+
+.homePage-onlineExperiences-main-container > p {
+  color: white;
+  position: absolute;
+  top: 42vw;
+  left: 2vw;
+}
+
+.homePage-onlineExperiences-second-containers {
+  position: relative;
+  cursor: pointer;
+}
+
+.homePage-onlineExperiences-second-containers > p {
+  width: 15vw;
+  font-size: 1vw;
+  position: absolute;
+  top: 17vw;
+  left: 1vw;
+  color: white;
+}
+
+.homePage-onlineExperiences-second-containers > img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 2vw;
+}
+
+.homePage-onlineExperiences-other-containers {
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage-onlineExperiences-third-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.homePage-onlineExperiences-third-container > p {
+  position: absolute;
+  left: 2vw;
+  top: 21.5vw;
+  color: white;
+}
+
+.homePage-onlineExperiences-third-container > img {
+  margin-top: 2vw;
+  width: 42.5vw;
+  height: 22.7vw;
+  border-radius: 2vw;
+}
+
+.homePage-onlineExperiences-container-for-second-containers {
+  display: flex;
+  justify-content: space-evenly;
 }

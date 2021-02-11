@@ -3,6 +3,7 @@
 function getById(id) {
   return document.getElementById(id);
 }
+
 function createEl(el, text) {
   let newEl = document.createElement(el);
   if (text) {
@@ -10,6 +11,7 @@ function createEl(el, text) {
   }
   return newEl;
 }
+
 //Initial DOM elements selectors
 let homePage = getById("PlacesToStay");
 let expPage = getById("Experiences");
@@ -19,9 +21,12 @@ let experiencesPageMenu = getById("experiencesPage-filter-menu");
 let filtered = getById("filter");
 let homePageTowns = getById("homePage-towns");
 let homePageLiveAnywhere = getById("homePage-liveAnywhere");
+let homePageOnlineExperiences = getById("homePage-onlineExperiences");
+
 //SPA Router
 function Router() {
   let url = location.hash.slice(1);
+
   switch (url) {
     case "PlacesToStay": {
       homePage.style.display = "block";
@@ -47,6 +52,7 @@ function Router() {
       onlineExpPage.style.display = "block";
       homePageTowns.style.display = "none";
       homePageLiveAnywhere.style.display = "none";
+      homePageOnlineExperiences.style.display = "none";
       break;
     }
     default: {
