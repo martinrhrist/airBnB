@@ -2,11 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Air Bnb</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.2/js/v4-shims.js"
+    ></script>
   </head>
   <body>
-    ul
+    <header id="homePage-header">
+      <nav id="homePage-nav">
+        <div id="homePage-logo">
+          <i class="fab fa-airbnb"></i>
+          <p>airbnb</p>
+        </div>
+        <div id="homePage-navigation">
+          <a href="">Places to stay</a>
+          <a href="">Experiences</a>
+          <a href="">Online Experiences</a>
+        </div>
+        <div id="becomeHost-language-profile">
+          <button id="homePage-hostButton">Become a host</button>
+          <button id="homePage-languageButton">
+            <i class="fas fa-globe-europe"></i>
+          </button>
+          <div id="profileInHeader">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-user-circle"></i>
+          </div>
+        </div>
+      </nav>
+      <div id="homePage-filter">
+        <div class="homePage-filter-text">
+          <p class="homePage-filter-firstText">Location</p>
+          <p class="homePage-filter-secondText">Where are you going?</p>
+        </div>
+        <div class="homePage-filter-text">
+          <p class="homePage-filter-firstText">Check in</p>
+          <p class="homePage-filter-secondText">Add dates</p>
+        </div>
+        <div class="homePage-filter-text">
+          <p class="homePage-filter-firstText">Check out</p>
+          <p class="homePage-filter-secondText">Add dates</p>
+        </div>
+        <div class="homePage-filter-text">
+          <p class="homePage-filter-firstText">Guests</p>
+          <p class="homePage-filter-secondText">Add guests</p>
+        </div>
+        <div class="homePage-filter-text">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <p id="homePage-header-text">Go Near</p>
+      <button id="homePage-header-button">Explore nearby stays</button>
+    </header>
   </body>
 </html>

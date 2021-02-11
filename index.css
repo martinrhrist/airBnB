@@ -1,0 +1,247 @@
+/* reset browser style  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* style */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+#homePage-header {
+  background-image: url("pictures/main-picture.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 45vw;
+}
+
+#homePage-nav {
+  padding-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#homePage-logo {
+  display: flex;
+  font-size: 1.7vw;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fa-airbnb {
+  font-size: 3vw;
+}
+
+#homePage-logo > p {
+  margin-top: 0.5vw;
+  margin-left: 0.5vw;
+  font-weight: bolder;
+}
+
+#homePage-navigation {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+}
+
+#homePage-navigation > a {
+  text-decoration: none;
+  margin: 1vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#homePage-navigation > a:hover {
+  color: rgb(194, 194, 194);
+}
+
+#becomeHost-language-profile {
+  display: flex;
+}
+
+#homePage-hostButton {
+  color: white;
+  font-size: 1.2vw;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+#homePage-languageButton {
+  color: white;
+  font-size: 1.3vw;
+  margin-left: 0.5vw;
+  cursor: pointer;
+  outline: none;
+}
+#homePage-hostButton:hover,
+#homePage-languageButton:hover {
+  color: rgb(221, 220, 220);
+}
+
+#profileInHeader {
+  background-color: whitesmoke;
+  color: grey;
+  width: 5.5vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30vw;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+.fa-bars {
+  display: flex;
+  font-size: 1.2vw;
+}
+
+.fa-user-circle {
+  font-size: 2.2vw;
+}
+
+#homePage-filter {
+  display: flex;
+  width: 65vw;
+  height: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+  background-color: honeydew;
+  border-radius: 4vw;
+}
+
+.homePage-filter-firstText {
+  font-size: 1.1vw;
+}
+
+.homePage-filter-secondText {
+  font-size: 1.2vw;
+}
+
+.homePage-filter-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 4vw;
+  padding: 1vw 3.1vw;
+  cursor: pointer;
+}
+
+.homePage-filter-text:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+#homePage-header-text {
+  font-size: 7vw;
+  font-weight: 900;
+  color: whitesmoke;
+  width: 20vw;
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+
+#homePage-header-button {
+  color: white;
+  border: 1px solid white;
+  padding: 1vw 2vw;
+  border-radius: 2vw;
+  margin-top: 0.5vw;
+  margin-left: 5vw;
+  cursor: pointer;
+  outline: none;
+}
