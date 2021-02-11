@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Air Bnb</title>
+    <title>Vacation Rentals, Homes, Experiences & Places - Airbnb</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -20,25 +20,62 @@
     ></script>
   </head>
   <body>
-    <header id="homePage-header">
-      <nav id="homePage-nav">
-        <div id="homePage-logo">
-          <i class="fab fa-airbnb"></i>
-          <p>airbnb</p>
-        </div>
-        <div id="homePage-navigation">
-          <a href="">Places to stay</a>
-          <a href="">Experiences</a>
-          <a href="">Online Experiences</a>
-        </div>
-        <div id="becomeHost-language-profile">
-          <button id="homePage-hostButton">Become a host</button>
-          <button id="homePage-languageButton">
-            <i class="fas fa-globe-europe"></i>
-          </button>
-          <div id="profileInHeader">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-user-circle"></i>
+    <div id="PlacesToStay">
+      <header id="homePage-header">
+        <nav id="homePage-nav">
+          <div id="homePage-logo">
+            <i class="fab fa-airbnb"></i>
+            <p>airbnb</p>
+          </div>
+          <div id="homePage-navigation">
+            <a href="#PlacesToStay">Places to stay</a>
+            <a href="#Experiences">Experiences</a>
+            <a href="#Online-Experiences">Online Experiences</a>
+          </div>
+          <div id="becomeHost-language-profile">
+            <button id="homePage-hostButton">Become a host</button>
+            <button id="homePage-languageButton">
+              <i class="fas fa-globe-europe"></i>
+            </button>
+            <div id="profileInHeader">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-user-circle"></i>
+            </div>
+          </div>
+        </nav>
+        <div id="homePage-filter">
+          <div id="homePage-filter-menu">
+            <div class="homePage-filter-text">
+              <p class="homePage-filter-firstText">Location</p>
+              <p class="homePage-filter-secondText">Where are you going?</p>
+            </div>
+            <div id="filter">
+            <div class="homePage-filter-text">
+              <p class="homePage-filter-firstText">Check in</p>
+              <p class="homePage-filter-secondText">Add dates</p>
+            </div>
+            <div class="homePage-filter-text">
+              <p class="homePage-filter-firstText">Check out</p>
+              <p class="homePage-filter-secondText">Add dates</p>
+            </div>
+            <div class="homePage-filter-text">
+              <p class="homePage-filter-firstText">Guests</p>
+              <p class="homePage-filter-secondText">Add guests</p>
+            </div>
+          </div>
+            <div id="experiencesPage-filter-menu">
+              <div class="homePage-filter-text">
+                <p class="homePage-filter-firstText">Date</p>
+                <p class="homePage-filter-secondText">Add when you want to go</p>
+              </div>
+              </div>
+              <div class="homePage-filter-text">
+                <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <p id="homePage-header-text">Go Near</p>
+          <button id="homePage-header-button">Explore nearby stays</button>
+            </div>
           </div>
         </div>
       </nav>
@@ -145,5 +182,10 @@
       </div>
       </div>
     </section>
+      </header>
+    </div>
+    <div id="Experiences"></div>
+    <div id="Online-Experiences"></div>
+    <script src="index.js"></script>
   </body>
 </html>

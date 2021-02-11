@@ -192,7 +192,7 @@ body {
   font-size: 2.2vw;
 }
 
-#homePage-filter {
+#homePage-filter-menu {
   display: flex;
   width: 65vw;
   height: 12vh;
@@ -203,6 +203,19 @@ body {
   margin-top: 3vh;
   background-color: honeydew;
   border-radius: 4vw;
+}
+#experiencesPage-filter-menu {
+  display: flex;
+  width: 65vw;
+  height: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+  background-color: honeydew;
+  border-radius: 4vw;
+  margin-top: auto;
 }
 
 .homePage-filter-firstText {
@@ -233,6 +246,7 @@ body {
   width: 20vw;
   margin-top: 5vw;
   margin-left: 5vw;
+  display: flex;
 }
 
 #homePage-header-button {
@@ -245,6 +259,7 @@ body {
   cursor: pointer;
   outline: none;
 }
+<<<<<<< HEAD
 
 #homePage-towns {
   margin-top: 5vw;
@@ -306,4 +321,8 @@ body {
 .homePage-liveAnywhere-container > p {
   margin-top: 0.5vw;
   font-weight: bold;
+=======
+#filter {
+  display: flex;
+>>>>>>> 201da94e4427e68509063dc4221b2ba650faab1e
 }
