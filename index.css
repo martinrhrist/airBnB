@@ -245,3 +245,65 @@ body {
   cursor: pointer;
   outline: none;
 }
+
+#homePage-towns {
+  margin-top: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+.homePage-towns-container {
+  display: flex;
+  margin: 3vw 3vw;
+  cursor: pointer;
+}
+
+.homePage-towns-container > img {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 2vw;
+}
+
+.homePage-towns-container-text {
+  display: flex;
+  width: 10vw;
+  margin-left: 1vw;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homePage-towns-bold-text {
+  font-weight: bold;
+}
+
+#homePage-liveAnywhere {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage-liveAnywhere-container > img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 1vw;
+}
+.homePage-liveAnywhere-container {
+  cursor: pointer;
+}
+
+#homePage-liveAnywhere-allContainers {
+  display: flex;
+  justify-content: space-evenly;
+}
+#homePage-liveAnywhere > p {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-left: 4vw;
+  margin-bottom: 2vw;
+}
+.homePage-liveAnywhere-container > p {
+  margin-top: 0.5vw;
+  font-weight: bold;
+}
