@@ -259,7 +259,6 @@ body {
   cursor: pointer;
   outline: none;
 }
-<<<<<<< HEAD
 
 #homePage-towns {
   margin-top: 5vw;
@@ -321,8 +320,6 @@ body {
 .homePage-liveAnywhere-container > p {
   margin-top: 0.5vw;
   font-weight: bold;
-=======
 #filter {
   display: flex;
->>>>>>> 201da94e4427e68509063dc4221b2ba650faab1e
 }
