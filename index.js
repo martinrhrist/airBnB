@@ -17,6 +17,8 @@ let onlineExpPage = getById("Online-Experiences");
 let homePageMenu = getById("homePage-filter-menu");
 let experiencesPageMenu = getById("experiencesPage-filter-menu");
 let filtered = getById("filter");
+let homePageTowns = getById("homePage-towns");
+let homePageLiveAnywhere = getById("homePage-liveAnywhere");
 //SPA Router
 function Router() {
   let url = location.hash.slice(1);
@@ -43,6 +45,8 @@ function Router() {
       homePage.style.display = "none";
       expPage.style.display = "none";
       onlineExpPage.style.display = "block";
+      homePageTowns.style.display = "none";
+      homePageLiveAnywhere.style.display = "none";
       break;
     }
     default: {

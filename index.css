@@ -320,6 +320,7 @@ body {
 .homePage-liveAnywhere-container > p {
   margin-top: 0.5vw;
   font-weight: bold;
+}
 #filter {
   display: flex;
 }
