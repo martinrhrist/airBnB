@@ -22,6 +22,7 @@ let filtered = getById("filter");
 let homePageTowns = getById("homePage-towns");
 let homePageLiveAnywhere = getById("homePage-liveAnywhere");
 let homePageOnlineExperiences = getById("homePage-onlineExperiences");
+let homePageJoinHosts = getById("homePage-joinHosts");
 let OnlineExpLogo = getById("online-exp-logo");
 
 //SPA Router
@@ -34,6 +35,7 @@ function Router() {
       expPage.style.display = "none";
       onlineExpPage.style.display = "none";
       homePageMenu.style.display = "flex";
+      homePageJoinHosts.style.display = "block";
       experiencesPageMenu.style.display = "none";
       filtered.style.display = "flex";
       break;
@@ -42,6 +44,7 @@ function Router() {
       homePage.style.display = "block";
       expPage.style.display = "none";
       onlineExpPage.style.display = "none";
+      homePageJoinHosts.style.display = "block";
       homePageMenu.style.innerHTML = "";
       experiencesPageMenu.style.display = "flex";
       filtered.style.display = "none";
@@ -54,6 +57,7 @@ function Router() {
       homePageTowns.style.display = "none";
       homePageLiveAnywhere.style.display = "none";
       homePageOnlineExperiences.style.display = "none";
+      homePageJoinHosts.style.display = "none";
       break;
     }
     default: {
@@ -65,9 +69,7 @@ function Router() {
     }
   }
 }
-function goToHomePage() {
-  console.log("Raboti");
-}
+
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
-OnlineExpLogo.addEventListener("click", goToHomePage);
+
