@@ -1,8 +1,9 @@
-#airbnb-logo-exp {
+ #airbnb-logo-exp {
   color: rgb(255, 90, 95);
   height: 3vw;
   width: 3vw;
 }
+
 #online-exp-logo {
   display: flex;
   color: rgb(255, 90, 95);
@@ -11,30 +12,35 @@
   margin-left: 5vw;
   margin-top: 2vw;
   height: 4vw;
-
   width: 5vw;
 }
+
 .logo-text {
   margin-top: 0.2vw;
   font-weight: bold;
   font-size: 2vw;
 }
+
 #online-exp-header {
   box-shadow: 1px 1px 3px 3px #969696;
 }
+
 #online-exp-nav {
   display: flex;
   justify-content: space-between;
 }
+
 #becomeHost-language-exp {
   display: flex;
   margin-right: 5vw;
 }
+
 #onlineExpPage-hostButton {
   font-size: 1vw;
   color: #222222;
   font-weight: bold;
 }
+
 #profileInHeader-exp {
   background-color: whitesmoke;
   color: grey;
@@ -47,34 +53,27 @@
   cursor: pointer;
   width: 4.5vw;
   height: 3vw;
-  margin-top: 25px;
+  margin-top: 1.5vw;
 }
+
 #profileInHeader-exp:hover {
   box-shadow: 1px 1px 3px 3px #969696;
 }
+
 #visit-homePage {
   text-decoration: none;
 }
-#filter-section-picture {
-  position: relative;
-  margin-top: 1em;
-  width: 85vw;
+
+#filter-section-header{
+  background-image: url(pictures/snimka.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 38vw;
-  right: 8vw;
 }
-#filter-section {
-  position: absolute;
-}
-#filter-section-header {
-  position: absolute;
-  width: 90vw;
+
+#filter-section-header > p {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-#filter-section-text {
-  position: relative;
-  top: 13rem;
-  z-index: 1;
-  font-size: 50px;
-  left: 5rem;
-  font-weight: bold;
-}
+

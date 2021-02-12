@@ -36,6 +36,8 @@ function Router() {
       onlineExpPage.style.display = "none";
       homePageMenu.style.display = "flex";
       homePageJoinHosts.style.display = "block";
+      homePageTowns.style.display = "flex";
+      homePageOnlineExperiences.style.display = "block";
       experiencesPageMenu.style.display = "none";
       filtered.style.display = "flex";
       break;
