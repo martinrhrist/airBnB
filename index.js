@@ -65,9 +65,6 @@ function Router() {
     }
   }
 }
-function goToHomePage() {
-  console.log("Raboti");
-}
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
 OnlineExpLogo.addEventListener("click", goToHomePage);
