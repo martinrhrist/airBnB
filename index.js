@@ -22,6 +22,7 @@ let filtered = getById("filter");
 let homePageTowns = getById("homePage-towns");
 let homePageLiveAnywhere = getById("homePage-liveAnywhere");
 let homePageOnlineExperiences = getById("homePage-onlineExperiences");
+let OnlineExpLogo = getById("online-exp-logo");
 
 //SPA Router
 function Router() {
@@ -64,5 +65,9 @@ function Router() {
     }
   }
 }
+function goToHomePage() {
+  console.log("Raboti");
+}
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
+OnlineExpLogo.addEventListener("click", goToHomePage);
