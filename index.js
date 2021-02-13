@@ -69,6 +69,10 @@ function Router() {
       expPage.style.display = "none";
       onlineExpPage.style.display = "none";
       experiencesPageMenu.style.display = "none";
+      homePageJoinHosts.style.display = "block";
+      homePageTowns.style.display = "flex";
+      homePageOnlineExperiences.style.display = "block";
+      filtered.style.display = "flex";
       break;
     }
   }

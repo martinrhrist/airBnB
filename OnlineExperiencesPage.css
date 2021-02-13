@@ -63,6 +63,9 @@
 #visit-homePage {
   text-decoration: none;
 }
+#onlineExperience-filter-section {
+  box-shadow: 1px 1px #969696;
+}
 
 #filter-section-header {
   background-image: url(pictures/snimka.jpeg);
@@ -70,16 +73,23 @@
   background-repeat: no-repeat;
   height: 38vw;
   margin-top: 1vw;
+  position: relative;
 }
 
 #filter-section-header > p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: absolute;
 }
 #filter-section-filters {
   display: flex;
   justify-content: start;
+  align-self: center;
+}
+#filter-section-link {
+  text-decoration: none;
+  color: black;
 }
 #filter-button {
   display: flex;
@@ -138,4 +148,18 @@
   margin-left: 0.3vw;
   outline: none;
   margin-top: 0.1vw;
+}
+#filter-section-header-firstText {
+  top: 12vw;
+  left: 4vw;
+  font-size: 3.5vw;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#filter-section-header-secondText {
+  top: 22vw;
+  left: 4vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
