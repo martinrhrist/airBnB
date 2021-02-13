@@ -25,6 +25,7 @@ let homePageOnlineExperiences = getById("homePage-onlineExperiences");
 let homePageJoinHosts = getById("homePage-joinHosts");
 let OnlineExpLogo = getById("online-exp-logo");
 let locationExperiences = getById("location");
+let myPageTitle = getById("page-title");
 
 //SPA Router
 function Router() {
@@ -41,6 +42,8 @@ function Router() {
       homePageOnlineExperiences.style.display = "block";
       experiencesPageMenu.style.display = "none";
       filtered.style.display = "flex";
+      myPageTitle.innerText =
+        "Vacation Rentals, Homes, Experiences & Places - Airbnb";
       break;
     }
     case "Experiences": {
@@ -62,6 +65,7 @@ function Router() {
       homePageLiveAnywhere.style.display = "none";
       homePageOnlineExperiences.style.display = "none";
       homePageJoinHosts.style.display = "none";
+      myPageTitle.innerText = "Online Experiences";
       break;
     }
     default: {
