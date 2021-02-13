@@ -24,6 +24,7 @@ let homePageLiveAnywhere = getById("homePage-liveAnywhere");
 let homePageOnlineExperiences = getById("homePage-onlineExperiences");
 let homePageJoinHosts = getById("homePage-joinHosts");
 let OnlineExpLogo = getById("online-exp-logo");
+let locationExperiences = getById("location");
 
 //SPA Router
 function Router() {
@@ -50,6 +51,7 @@ function Router() {
       homePageMenu.style.innerHTML = "";
       experiencesPageMenu.style.display = "flex";
       filtered.style.display = "none";
+
       break;
     }
     case "Online-Experiences": {
@@ -74,4 +76,3 @@ function Router() {
 
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
-

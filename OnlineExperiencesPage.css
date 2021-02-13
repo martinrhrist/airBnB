@@ -1,4 +1,4 @@
- #airbnb-logo-exp {
+#airbnb-logo-exp {
   color: rgb(255, 90, 95);
   height: 3vw;
   width: 3vw;
@@ -64,11 +64,12 @@
   text-decoration: none;
 }
 
-#filter-section-header{
+#filter-section-header {
   background-image: url(pictures/snimka.jpeg);
   background-size: 100%;
   background-repeat: no-repeat;
   height: 38vw;
+  margin-top: 1vw;
 }
 
 #filter-section-header > p {
@@ -76,4 +77,65 @@
   flex-direction: row;
   justify-content: center;
 }
-
+#filter-section-filters {
+  display: flex;
+  justify-content: start;
+}
+#filter-button {
+  display: flex;
+  border-radius: 40vw;
+  height: 3vw;
+  width: 7vw;
+  font-size: 1.4vw;
+  border: 0.1vw solid gray;
+  margin-left: 5vw;
+  outline: none;
+}
+#filter-button:hover {
+  border: 0.1vw solid black;
+}
+#filter-button-text {
+  display: flex;
+  margin-top: 0.5vw;
+  margin-left: 0.3vw;
+}
+#filter-dates {
+  border-radius: 40vw;
+  height: 2vw;
+  width: 6vw;
+  font-size: 1.2vw;
+  border: 0.1vw solid gray;
+  outline: none;
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+#filter-dates:hover {
+  border: 0.1vw solid black;
+}
+#filter-groupSize {
+  border-radius: 40vw;
+  height: 2vw;
+  width: 7vw;
+  font-size: 1vw;
+  border: 0.1vw solid gray;
+  outline: none;
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+#filter-groupSize:hover {
+  border: 0.1vw solid black;
+}
+#vertical-line-section {
+  height: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: gray;
+}
+.button-category {
+  background-color: #f2f2f2;
+  border-radius: 40vw;
+  height: 2.5vw;
+  margin-left: 0.3vw;
+  outline: none;
+  margin-top: 0.1vw;
+}
