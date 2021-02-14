@@ -554,3 +554,81 @@ body {
   color: black;
   font-size: 1.2vw;
 }
+
+/* filter form */
+#homePage-filter-menu > form {
+  position: absolute;
+  top: 10vw;
+  display: flex;
+  width: 65vw;
+}
+
+#filter-input-location {
+  margin-left: 3vw;
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+  outline: none;
+}
+
+#filter-input-checkIn {
+  font-family:"Montserrat", sans-serif;
+  font-size: 1vw;
+  background-color: transparent;
+  width: 7.7vw;
+  margin-left: 6.5vw;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+  outline: none;
+  
+}
+
+#filter-input-checkOut {
+  font-family:"Montserrat", sans-serif;
+  font-size: 1vw;
+  background-color: transparent;
+  width: 7.7vw;
+  margin-left: 4.7vw;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+  outline: none;
+}
+
+#filter-input-guests {
+  background-color: transparent;
+  width: 5vw;
+  margin-left: 4.5vw;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+  outline: none;
+}
+
+#filter-input-submit {
+  top: -3vw;
+  margin-left: 7.5vw;
+  height:6vw;
+  width: 8vw;
+  position: absolute;
+  left: 49.6vw;
+  border-radius: 4vw;
+  color: transparent;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  outline: transparent;
+}
+
+
+

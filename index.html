@@ -52,22 +52,29 @@
           <div id="homePage-filter-menu">
             <div id="location" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Location</p>
-              <p class="homePage-filter-secondText">Where are you going?</p>
+              <p id="homePage-filter-location-secondText" class="homePage-filter-secondText">Where are you going?</p>
             </div>
             <div id="filter">
-            <div class="homePage-filter-text">
+            <div id="homePage-filter-checkIn-div" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Check in</p>
-              <p class="homePage-filter-secondText">Add dates</p>
+              <p id="homePage-filter-checkIn-secondText" class="homePage-filter-secondText">Add dates</p>
             </div>
-            <div class="homePage-filter-text">
+            <div id="homePage-filter-checkOut-div" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Check out</p>
-              <p class="homePage-filter-secondText">Add dates</p>
+              <p id="homePage-filter-checkOut-secondText" class="homePage-filter-secondText">Add dates</p>
             </div>
-            <div class="homePage-filter-text">
+            <div id="homePage-filter-guests-div" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Guests</p>
-              <p class="homePage-filter-secondText">Add guests</p>
+              <p id="homePage-filter-guests-secondText" class="homePage-filter-secondText">Add guests</p>
             </div>
           </div>
+          <form>
+            <input id="filter-input-location" type="text">
+            <input id="filter-input-checkIn" type="date">
+            <input id="filter-input-checkOut" type="date">
+            <input id="filter-input-guests" type="number">
+            <input id="filter-input-submit"  type="submit">
+          </form>
             <div id="experiencesPage-filter-menu">
               <div class="experiencesPage-filter-text">
                 <p class="homePage-filter-firstText">Date</p>
@@ -332,5 +339,6 @@
     <script src="OnlineExperiences.js"></script>
     <script src="OnlineExperiencesManager.js"></script>
     <script src="index.js"></script>
+    <script src="homePage.js"></script>
   </body>
 </html>
