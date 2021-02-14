@@ -630,5 +630,41 @@ body {
   outline: transparent;
 }
 
+/* dropdown profile in header */
+#dropdown-profileInHeader {
+  right: 5vw;
+  top: 6vw;
+  position: absolute;
+  background-color: rgb(237, 238, 236);
+  width: 17vw;
+  height: 12vw;
+  border-radius: 1.5vw;
+  visibility: hidden;
+}
+
+#dropdown-profileInHeader > div {
+ display: flex;
+  flex-direction: column;
+  width: 14vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+}
+
+#dropdown-logIn {
+  margin-bottom: 1vw;
+}
+
+#dropdown-profileInHeader > div > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1vw;
+  margin-top: 0.5vw;
+}
+
+#dropdown-profileInHeader > div > a:hover {
+  color: grey;
+}
+
 
 

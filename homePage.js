@@ -14,6 +14,9 @@ let homePageFilterCheckInParagraph = document.getElementById("homePage-filter-ch
 let homePageFilterCheckOutParagraph = document.getElementById("homePage-filter-checkOut-secondText");
 let homePageFilterGuestsParagraph = document.getElementById("homePage-filter-guests-secondText");
 
+let profileInHeader = getById("profileInHeader");
+let dropdownProfileInHeader = getById("dropdown-profileInHeader");
+
 //EventListeners
 homePageFilterLocationDiv.addEventListener("click", function () {
     if (homePageFilterLocationParagraph.style.visibility === "hidden") {
@@ -54,3 +57,5 @@ homePageFilterGuestsDiv.addEventListener("click", function () {
         homePageFilterGuests.style.visibility = 'visible';
     }
 });
+
+profileInHeader.addEventListener("click", () => { dropdownProfileInHeader.style.visibility === 'hidden' ? dropdownProfileInHeader.style.visibility = 'visible' : dropdownProfileInHeader.style.visibility = "hidden"});
