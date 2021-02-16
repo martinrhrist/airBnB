@@ -58,41 +58,31 @@
           </div>
         </nav>
         <div id="homePage-filter">
-          <div id="homePage-filter-menu">
+            <form>
             <div id="location" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Location</p>
               <p id="homePage-filter-location-secondText" class="homePage-filter-secondText">Where are you going?</p>
+              <input id="filter-input-location" type="text">
             </div>
-            <div id="filter">
             <div id="homePage-filter-checkIn-div" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Check in</p>
               <p id="homePage-filter-checkIn-secondText" class="homePage-filter-secondText">Add dates</p>
+              <input id="filter-input-checkIn" type="date">
             </div>
             <div id="homePage-filter-checkOut-div" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Check out</p>
               <p id="homePage-filter-checkOut-secondText" class="homePage-filter-secondText">Add dates</p>
+              <input id="filter-input-checkOut" type="date">
             </div>
             <div id="homePage-filter-guests-div" class="homePage-filter-text">
               <p class="homePage-filter-firstText">Guests</p>
               <p id="homePage-filter-guests-secondText" class="homePage-filter-secondText">Add guests</p>
+              <input id="filter-input-guests" type="number">
             </div>
-          </div>
-          <form>
-            <input id="filter-input-location" type="text">
-            <input id="filter-input-checkIn" type="date">
-            <input id="filter-input-checkOut" type="date">
-            <input id="filter-input-guests" type="number">
-            <input id="filter-input-submit"  type="submit">
-          </form>
-            <div id="experiencesPage-filter-menu">
-              <div class="experiencesPage-filter-text">
-                <p class="homePage-filter-firstText">Date</p>
-                <p class="homePage-filter-secondText">Add when you want to go</p>
-              </div>
-              </div>
-              <div class="homePage-filter-text">
-                <i class="fas fa-search"></i>
+             <div id="homePage-filter-submit-div" class="homePage-filter-text">
+               <button id="filter-input-submit" type="submit"><i class="fas fa-search"></i></button>
             </div>
+            </form>
           </div>
           <p id="homePage-header-text">Go Near</p>
           <button id="homePage-header-button">Explore nearby stays</button>
