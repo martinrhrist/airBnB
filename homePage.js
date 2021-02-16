@@ -16,6 +16,9 @@ let homePageFilterGuestsParagraph = document.getElementById("homePage-filter-gue
 
 let profileInHeader = getById("profileInHeader");
 let dropdownProfileInHeader = getById("dropdown-profileInHeader");
+let logIn = getById("homePage-logIn");
+let linkLogIn = getById("dropdown-logIn");
+let closeButtonLogIn = getById("close-logIn-homePage");
 
 
 //EventListeners
@@ -41,3 +44,10 @@ homePageFilterGuestsDiv.addEventListener("click", function () {
 
 
 profileInHeader.addEventListener("click", () => { dropdownProfileInHeader.style.visibility === 'hidden' ? dropdownProfileInHeader.style.visibility = 'visible' : dropdownProfileInHeader.style.visibility = "hidden" });
+
+linkLogIn.addEventListener("click", () => {
+    logIn.style.display = 'block';
+    dropdownProfileInHeader.style.visibility = "hidden";
+});
+
+closeButtonLogIn.addEventListener("click", () => logIn.style.display = 'none');
