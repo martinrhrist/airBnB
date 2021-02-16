@@ -1,4 +1,20 @@
 "use strict";
+//Initial object manager
+let myManager = new OnlineExperiencesManager();
+//filling all elements into the manager
+myObjects.forEach(function (object) {
+  let onlineExperience = new OnlineExperiences(
+    object.picture,
+    object.rating,
+    object.title,
+    object.visitedTimes,
+    object.location,
+    object.price,
+    object.category,
+    object.id
+  );
+  myManager.addExperience(onlineExperience);
+});
 //Util Functions
 function getById(id) {
   return document.getElementById(id);
@@ -26,7 +42,7 @@ let homePageJoinHosts = getById("homePage-joinHosts");
 let OnlineExpLogo = getById("online-exp-logo");
 let locationExperiences = getById("location");
 let myPageTitle = getById("page-title");
-
+let objectsSection = getById("onlineExperience-experiences-section-container");
 //SPA Router
 function Router() {
   let url = location.hash.slice(1);
@@ -84,3 +100,47 @@ function Router() {
 
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
+function showOnlineExperiences(Experiences, container) {
+  for (let i = 0; i < Experiences.length; i++) {
+    let current = Experiences[i];
+    let experienceCard = createEl("div");
+    experienceCard.style.marginRight = "1vw";
+    experienceCard.style.marginBottom = "1vw";
+    experienceCard.class = "experience-card";
+    let img = createEl("img");
+    img.style.width = "14vw";
+    img.style.height = "18.5vw";
+    img.style.borderRadius = "1vw";
+    img.alt = "snimka";
+    img.src = current.picture;
+    let expTitle = createEl("p", current.title);
+    expTitle.style.width = "12vw";
+    let firstRowDiv = createEl("div");
+    firstRowDiv.style.display = "flex";
+    firstRowDiv.style.fontSize = "0.9vw";
+    firstRowDiv.style.marginBottom = "0.5vw";
+    let starIcon = createEl("i");
+    starIcon.className = "far fa-star";
+    starIcon.style.color = "red";
+    let expRating = createEl("p", current.rating);
+    expRating.style.marginRight = "0.3vw";
+    let expVisited = createEl("p", "(" + current.visitedTimes + ") . ");
+    expVisited.style.opacity = "0.6";
+    let expLocation = createEl("p", current.location);
+    expLocation.style.opacity = "0.6";
+    expLocation.style.marginLeft = "0.3vw";
+
+    let expPrice = createEl("p", "From " + current.price + "лв./ person");
+    expPrice.style.fontWeight = "bold";
+    container.append(experienceCard);
+    experienceCard.append(img);
+    experienceCard.append(firstRowDiv);
+    firstRowDiv.append(starIcon);
+    firstRowDiv.append(expRating);
+    firstRowDiv.append(expVisited);
+    firstRowDiv.append(expLocation);
+    experienceCard.append(expTitle);
+    experienceCard.append(expPrice);
+  }
+}
+showOnlineExperiences(myManager.onlineExperiences, objectsSection);

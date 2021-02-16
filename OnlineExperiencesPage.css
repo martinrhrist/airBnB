@@ -163,3 +163,12 @@
   font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+#onlineExperience-experiences-section {
+  margin-left: 5vw;
+  margin-top: 2vw;
+}
+.online-experiences-section-header {
+  font-size: 1.8vw;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}

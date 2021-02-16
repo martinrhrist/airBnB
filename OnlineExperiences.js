@@ -6,9 +6,8 @@ class OnlineExperiences {
     visitedTimes,
     location,
     price,
-    video,
-    id,
-    category
+    category,
+    id
   ) {
     this.picture = picture;
     this.rating = rating;
@@ -16,8 +15,7 @@ class OnlineExperiences {
     this.visitedTimes = visitedTimes;
     this.location = location;
     this.price = price;
-    this.video = video;
-    this.id = id;
     this.category = category;
+    this.id = id;
   }
 }

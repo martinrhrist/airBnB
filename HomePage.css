@@ -575,7 +575,7 @@ body {
 }
 
 #filter-input-checkIn {
-  font-family:"Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1vw;
   background-color: transparent;
   width: 7.7vw;
@@ -586,11 +586,10 @@ body {
   border-bottom: 1px solid black;
   visibility: hidden;
   outline: none;
-  
 }
 
 #filter-input-checkOut {
-  font-family:"Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1vw;
   background-color: transparent;
   width: 7.7vw;
@@ -618,7 +617,7 @@ body {
 #filter-input-submit {
   top: -3vw;
   margin-left: 7.5vw;
-  height:6vw;
+  height: 6vw;
   width: 8vw;
   position: absolute;
   left: 49.6vw;
@@ -643,7 +642,7 @@ body {
 }
 
 #dropdown-profileInHeader > div {
- display: flex;
+  display: flex;
   flex-direction: column;
   width: 14vw;
   margin-left: auto;
@@ -665,6 +664,3 @@ body {
 #dropdown-profileInHeader > div > a:hover {
   color: grey;
 }
-
-
-
