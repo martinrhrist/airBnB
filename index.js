@@ -32,9 +32,7 @@ function createEl(el, text) {
 let homePage = getById("PlacesToStay");
 let expPage = getById("Experiences");
 let onlineExpPage = getById("Online-Experiences");
-let homePageMenu = getById("homePage-filter-menu");
-let experiencesPageMenu = getById("experiencesPage-filter-menu");
-let filtered = getById("filter");
+let homePageMenu = getById("homePage-filter");
 let homePageTowns = getById("homePage-towns");
 let homePageLiveAnywhere = getById("homePage-liveAnywhere");
 let homePageOnlineExperiences = getById("homePage-onlineExperiences");
@@ -56,8 +54,6 @@ function Router() {
       homePageJoinHosts.style.display = "block";
       homePageTowns.style.display = "flex";
       homePageOnlineExperiences.style.display = "block";
-      experiencesPageMenu.style.display = "none";
-      filtered.style.display = "flex";
       myPageTitle.innerText =
         "Vacation Rentals, Homes, Experiences & Places - Airbnb";
       break;
@@ -68,9 +64,6 @@ function Router() {
       onlineExpPage.style.display = "none";
       homePageJoinHosts.style.display = "block";
       homePageMenu.style.innerHTML = "";
-      experiencesPageMenu.style.display = "flex";
-      filtered.style.display = "none";
-
       break;
     }
     case "Online-Experiences": {
@@ -88,11 +81,9 @@ function Router() {
       homePage.style.display = "block";
       expPage.style.display = "none";
       onlineExpPage.style.display = "none";
-      experiencesPageMenu.style.display = "none";
       homePageJoinHosts.style.display = "block";
       homePageTowns.style.display = "flex";
       homePageOnlineExperiences.style.display = "block";
-      filtered.style.display = "flex";
       break;
     }
   }

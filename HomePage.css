@@ -195,7 +195,7 @@ body {
   font-size: 2.2vw;
 }
 
-#homePage-filter-menu {
+#homePage-filter {
   display: flex;
   width: 65vw;
   height: 6vw;
@@ -206,23 +206,10 @@ body {
   margin-top: 3vh;
   background-color: honeydew;
   border-radius: 4vw;
-}
-#filter {
-  display: flex;
 }
 
-#experiencesPage-filter-menu {
+#homePage-filter > form {
   display: flex;
-  width: 65vw;
-  height: 6vw;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 3vh;
-  background-color: honeydew;
-  border-radius: 4vw;
-  margin-top: auto;
 }
 
 .homePage-filter-firstText {
@@ -238,17 +225,96 @@ body {
   justify-content: center;
   flex-direction: column;
   border-radius: 4vw;
-  padding: 1vw 3.1vw;
+  padding: 1vw 2.5vw;
   cursor: pointer;
+}
+
+#homePage-filter-checkIn-div,
+#homePage-filter-checkOut-div {
+  width: 9vw;
+}
+
+#homePage-filter-guests-div {
+  width: 7vw;
+}
+
+#location {
+  width: 13.5vw;
+}
+
+#homePage-filter-submit-div {
+  padding: 0 0;
 }
 
 .homePage-filter-text:hover {
   background-color: rgb(214, 214, 214);
 }
-.fa-search {
-  font-size: 1.5vw;
+
+/* filter form */
+
+#filter-input-location {
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  width: 12.5vw;
+  font-size: 1vw;
+  display: none;
 }
 
+#filter-input-checkIn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  background-color: transparent;
+  width: 8vw;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  display: none;
+}
+
+#filter-input-checkOut {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  background-color: transparent;
+  width: 8vw;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  display: none;
+}
+
+#filter-input-guests {
+  background-color: transparent;
+  width: 5vw;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1vw;
+  display: none;
+}
+
+#filter-input-submit {
+  display: flex;
+  justify-content: center;
+  padding: 2vw 2.5vw;
+  outline: none;
+}
+
+.fa-search {
+  font-size: 1.5vw;
+  border-radius: 4vw;
+}
+
+/* header Text - button */
 #homePage-header-text {
   font-size: 7vw;
   font-weight: 900;
@@ -269,6 +335,76 @@ body {
   cursor: pointer;
   outline: none;
   font-size: 1vw;
+}
+
+/* LogIn */
+#homePage-logIn {
+  position: relative;
+  margin-left: 35vw;
+  top: 5vw;
+  position: absolute;
+  background-color: rgb(237, 238, 236);
+  width: 30vw;
+  height: 25vw;
+  border-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  display: none;
+}
+#homePage-logIn > p {
+  display: flex;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+#homePage-logIn > form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#homePage-logIn > form > label {
+  margin-bottom: 0.5vw;
+}
+
+#username-logIn,
+#password-logIn {
+  margin-bottom: 0.5vw;
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+#logIn-button {
+  padding: 1vw 1vw;
+  margin-top: 3vw;
+  border-radius: 2vw;
+  border: 1px solid grey;
+  outline: none;
+}
+
+#logIn-button:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+#homePage-logIn > div {
+  margin-top: 1.5vw;
+  width: 28vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-times-circle {
+  display: flex;
 }
 
 /* Section Towns */
@@ -555,6 +691,7 @@ body {
   font-size: 1.2vw;
 }
 
+<<<<<<< HEAD
 /* filter form */
 #homePage-filter-menu > form {
   position: absolute;
@@ -629,6 +766,8 @@ body {
   outline: transparent;
 }
 
+=======
+>>>>>>> 37c1ccac62af8a79017586a21b295d8a9023185f
 /* dropdown profile in header */
 #dropdown-profileInHeader {
   right: 5vw;
@@ -659,6 +798,7 @@ body {
   color: black;
   font-size: 1.1vw;
   margin-top: 0.5vw;
+  cursor: pointer;
 }
 
 #dropdown-profileInHeader > div > a:hover {

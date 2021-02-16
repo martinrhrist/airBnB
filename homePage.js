@@ -16,46 +16,38 @@ let homePageFilterGuestsParagraph = document.getElementById("homePage-filter-gue
 
 let profileInHeader = getById("profileInHeader");
 let dropdownProfileInHeader = getById("dropdown-profileInHeader");
+let logIn = getById("homePage-logIn");
+let linkLogIn = getById("dropdown-logIn");
+let closeButtonLogIn = getById("close-logIn-homePage");
+
 
 //EventListeners
 homePageFilterLocationDiv.addEventListener("click", function () {
-    if (homePageFilterLocationParagraph.style.visibility === "hidden") {
-        homePageFilterLocationParagraph.style.visibility = "visible";
-        homePageFilterLocation.style.visibility = "hidden";
-    } else {
-        homePageFilterLocationParagraph.style.visibility = "hidden";
-        homePageFilterLocation.style.visibility = "visible";
-    }
+    homePageFilterLocationParagraph.style.display = "none";
+    homePageFilterLocation.style.display = "block";
 });
 
 homePageFilterCheckInDiv.addEventListener("click", function () {
-    if (homePageFilterCheckInParagraph.style.visibility === 'hidden') {
-        homePageFilterCheckInParagraph.style.visibility = 'visible';
-        homePageFilterCheckIn.style.visibility = 'hidden';
-    } else {
-        homePageFilterCheckInParagraph.style.visibility = "hidden";
-        homePageFilterCheckIn.style.visibility = 'visible';
-    }
+    homePageFilterCheckInParagraph.style.display = 'none';
+    homePageFilterCheckIn.style.display = 'block';
 });
 
 homePageFilterCheckOutDiv.addEventListener("click", function () {
-    if (homePageFilterCheckOutParagraph.style.visibility === 'hidden') {
-        homePageFilterCheckOutParagraph.style.visibility = 'visible';
-        homePageFilterCheckOut.style.visibility = 'hidden';
-    } else {
-        homePageFilterCheckOutParagraph.style.visibility = 'hidden';
-        homePageFilterCheckOut.style.visibility = 'visible';
-    }
+    homePageFilterCheckOutParagraph.style.display = 'none';
+    homePageFilterCheckOut.style.display = 'block';
 });
 
 homePageFilterGuestsDiv.addEventListener("click", function () {
-    if (homePageFilterGuestsParagraph.style.visibility === 'hidden') {
-        homePageFilterGuestsParagraph.style.visibility = 'visible';
-        homePageFilterGuests.style.visibility = 'hidden';
-    } else {
-        homePageFilterGuestsParagraph.style.visibility = 'hidden';
-        homePageFilterGuests.style.visibility = 'visible';
-    }
+    homePageFilterGuestsParagraph.style.display = 'none';
+    homePageFilterGuests.style.display = 'block';
 });
 
-profileInHeader.addEventListener("click", () => { dropdownProfileInHeader.style.visibility === 'hidden' ? dropdownProfileInHeader.style.visibility = 'visible' : dropdownProfileInHeader.style.visibility = "hidden"});
+
+profileInHeader.addEventListener("click", () => { dropdownProfileInHeader.style.visibility === 'hidden' ? dropdownProfileInHeader.style.visibility = 'visible' : dropdownProfileInHeader.style.visibility = "hidden" });
+
+linkLogIn.addEventListener("click", () => {
+    logIn.style.display = 'block';
+    dropdownProfileInHeader.style.visibility = "hidden";
+});
+
+closeButtonLogIn.addEventListener("click", () => logIn.style.display = 'none');
