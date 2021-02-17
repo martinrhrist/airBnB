@@ -42,6 +42,9 @@ let locationExperiences = getById("location");
 let myPageTitle = getById("page-title");
 let objectsSection = getById("onlineExperience-experiences-section-container");
 let BtnLoadMore = getById("btn-loadMore");
+let filterSectionCategories = getById("filter-section-categories");
+let btnEntertainment = getById("btn-category-entertainment");
+let btnMagic = getById("btn-category-magic");
 let hasLoaded = false;
 let startValue = 0;
 let endValue = 12;
@@ -105,6 +108,7 @@ function Router() {
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
 function showOnlineExperiences(Experiences, container, start, showObjects) {
+  container.innerHTML = "";
   for (let i = start; i < showObjects; i++) {
     let current = Experiences[i];
     let experienceCard = createEl("div");
@@ -146,8 +150,10 @@ function showOnlineExperiences(Experiences, container, start, showObjects) {
     experienceCard.append(expTitle);
     experienceCard.append(expPrice);
   }
-  startValue = endValue;
   endValue += 6;
+  if (endValue > Experiences.length) {
+    BtnLoadMore.style.display = "none";
+  }
 }
 
 BtnLoadMore.addEventListener("click", () => {
@@ -158,3 +164,18 @@ BtnLoadMore.addEventListener("click", () => {
     endValue
   );
 });
+function addFilterButtons(filterSectionCategs) {
+  for (let i = 0; i < filterSectionCategs.length; i++) {
+    let current = filterSectionCategs[i];
+    current.addEventListener("click", () => {
+      myManager.filterBy("category", current.innerText);
+      showOnlineExperiences(
+        myManager.filtered,
+        objectsSection,
+        startValue,
+        myManager.filtered.length
+      );
+    });
+  }
+}
+addFilterButtons(filterSectionCategories.children);
