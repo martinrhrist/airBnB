@@ -172,3 +172,15 @@
   margin-bottom: 1vw;
   font-weight: bold;
 }
+.button-loadMore {
+  margin-left: 40vw;
+  width: 8vw;
+  height: 3.5vw;
+  font-size: 1.1vw;
+  color: white;
+  background-color: #222222;
+  border-radius: 2vw;
+}
+.button-loadMore:hover {
+  background-color: black;
+}
