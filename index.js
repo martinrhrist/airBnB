@@ -42,6 +42,9 @@ let locationExperiences = getById("location");
 let myPageTitle = getById("page-title");
 let objectsSection = getById("onlineExperience-experiences-section-container");
 let BtnLoadMore = getById("btn-loadMore");
+let hasLoaded = false;
+let startValue = 0;
+let endValue = 12;
 //SPA Router
 function Router() {
   let url = location.hash.slice(1);
@@ -76,6 +79,15 @@ function Router() {
       homePageOnlineExperiences.style.display = "none";
       homePageJoinHosts.style.display = "none";
       myPageTitle.innerText = "Online Experiences";
+      if (!hasLoaded) {
+        showOnlineExperiences(
+          myManager.onlineExperiences,
+          objectsSection,
+          startValue,
+          endValue
+        );
+        hasLoaded = true;
+      }
       break;
     }
     default: {
@@ -92,9 +104,8 @@ function Router() {
 
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
-let showCount = 12;
-function showOnlineExperiences(Experiences, container, showObjects) {
-  for (let i = 0; i < showObjects; i++) {
+function showOnlineExperiences(Experiences, container, start, showObjects) {
+  for (let i = start; i < showObjects; i++) {
     let current = Experiences[i];
     let experienceCard = createEl("div");
     experienceCard.style.marginRight = "1vw";
@@ -135,9 +146,15 @@ function showOnlineExperiences(Experiences, container, showObjects) {
     experienceCard.append(expTitle);
     experienceCard.append(expPrice);
   }
+  startValue = endValue;
+  endValue += 6;
 }
-showOnlineExperiences(myManager.onlineExperiences, objectsSection, showCount);
-BtnLoadMore.addEventListener(
-  "click",
-  showOnlineExperiences(myManager.onlineExperiences, objectsSection, showCount)
-);
+
+BtnLoadMore.addEventListener("click", () => {
+  showOnlineExperiences(
+    myManager.onlineExperiences,
+    objectsSection,
+    startValue,
+    endValue
+  );
+});
