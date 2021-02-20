@@ -1,19 +1,22 @@
-// elements
+// inputs
 let homePageFilterLocation = getById("filter-input-location");
 let homePageFilterCheckIn = getById("filter-input-checkIn");
 let homePageFilterCheckOut = getById("filter-input-checkOut");
 let homePageFilterGuests = getById("filter-input-guests");
 
+// divs
 let homePageFilterLocationDiv = getById("location");
 let homePageFilterCheckInDiv = getById("homePage-filter-checkIn-div");
 let homePageFilterCheckOutDiv = getById("homePage-filter-checkOut-div");
 let homePageFilterGuestsDiv = getById("homePage-filter-guests-div");
 
+// paragraphs
 let homePageFilterLocationParagraph = document.getElementById("homePage-filter-location-secondText");
 let homePageFilterCheckInParagraph = document.getElementById("homePage-filter-checkIn-secondText");
 let homePageFilterCheckOutParagraph = document.getElementById("homePage-filter-checkOut-secondText");
 let homePageFilterGuestsParagraph = document.getElementById("homePage-filter-guests-secondText");
 
+// elements who open and close
 let profileInHeader = getById("profileInHeader");
 let dropdownProfileInHeader = getById("dropdown-profileInHeader");
 let logIn = getById("homePage-logIn");

@@ -32,11 +32,6 @@ function createEl(el, text) {
 let homePage = getById("PlacesToStay");
 let expPage = getById("Experiences");
 let onlineExpPage = getById("Online-Experiences");
-let homePageMenu = getById("homePage-filter");
-let homePageTowns = getById("homePage-towns");
-let homePageLiveAnywhere = getById("homePage-liveAnywhere");
-let homePageOnlineExperiences = getById("homePage-onlineExperiences");
-let homePageJoinHosts = getById("homePage-joinHosts");
 let OnlineExpLogo = getById("online-exp-logo");
 let locationExperiences = getById("location");
 let myPageTitle = getById("page-title");
@@ -54,33 +49,22 @@ function Router() {
 
   switch (url) {
     case "PlacesToStay": {
-      homePage.style.display = "block";
+      homePage.style.display = "flex";
       expPage.style.display = "none";
       onlineExpPage.style.display = "none";
-      homePageMenu.style.display = "flex";
-      homePageJoinHosts.style.display = "block";
-      homePageTowns.style.display = "flex";
-      homePageOnlineExperiences.style.display = "block";
-      myPageTitle.innerText =
-        "Vacation Rentals, Homes, Experiences & Places - Airbnb";
+      myPageTitle.innerText = "Vacation Rentals, Homes, Experiences & Places - Airbnb";
       break;
     }
     case "Experiences": {
       homePage.style.display = "block";
       expPage.style.display = "none";
       onlineExpPage.style.display = "none";
-      homePageJoinHosts.style.display = "block";
-      homePageMenu.style.innerHTML = "";
       break;
     }
     case "Online-Experiences": {
       homePage.style.display = "none";
       expPage.style.display = "none";
       onlineExpPage.style.display = "block";
-      homePageTowns.style.display = "none";
-      homePageLiveAnywhere.style.display = "none";
-      homePageOnlineExperiences.style.display = "none";
-      homePageJoinHosts.style.display = "none";
       myPageTitle.innerText = "Online Experiences";
       if (!hasLoaded) {
         showOnlineExperiences(
@@ -97,9 +81,6 @@ function Router() {
       homePage.style.display = "block";
       expPage.style.display = "none";
       onlineExpPage.style.display = "none";
-      homePageJoinHosts.style.display = "block";
-      homePageTowns.style.display = "flex";
-      homePageOnlineExperiences.style.display = "block";
       break;
     }
   }
