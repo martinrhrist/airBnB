@@ -8,6 +8,7 @@
     "https://www.searchpng.com/wp-content/uploads/2019/02/Airbnb-Logo-PNG-Image-1024x1024.png" 
             type = "image/x-icon">
     <link rel="stylesheet" href="View/homePage.css" />
+    <link rel="stylesheet" href="View/filteredHomesPage.css">
     <link rel="stylesheet" href="OnlineExperiencesPage.css">
     <link rel="stylesheet" href="View/Experiences.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -34,7 +35,7 @@
               <p>airbnb</p>
             </div>
             <div id="homePage-navigation">
-              <a href="#PlacesToStay">Places to stay</a>
+              <a id="linkPlacesToStay" href="#PlacesToStay">Places to stay</a>
               <a href="#Experiences">Experiences</a>
               <a href="#Online-Experiences">Online Experiences</a>
             </div>
@@ -233,7 +234,6 @@
       </div>
       </section>
       <section id="homePage-filtered-homes">
-
       </section>
     </div>
     <div id="Experiences"></div>
@@ -353,6 +353,16 @@
         <a href="https://instagram.com/airbnb"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
+    <script id="home-template" type="text/x-handlebars-template">
+  <div class="home-template">
+    <img src= {{image}} alt="home">
+    <div class="text-template">
+      <p>{{name}}</p>
+      <p>{{price}}</p>
+    </div>
+  </div>
+</script>
+   <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="OnlineExperiencesObjects.js"></script>
     <script src="OnlineExperiences.js"></script>
     <script src="OnlineExperiencesManager.js"></script>
@@ -362,6 +372,5 @@
     <script src="Model/HomeManager.js"></script>
     <script src="Model/homeObjects.js"></script>
     <script src="Controller/filteredHomesPage.js"></script>
-    <script src="node_modules/handlebars/"></script>
   </body>
 </html>

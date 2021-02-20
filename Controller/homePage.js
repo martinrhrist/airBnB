@@ -41,6 +41,8 @@
     let headerText = document.getElementById("homePage-header-text");
     let headerButton = document.getElementById("homePage-header-button");
 
+    let linkHomePage = document.getElementById("linkPlacesToStay");
+
 
     //EventListeners
     homePageFilterLocationDiv.addEventListener("click", function () {
@@ -73,6 +75,16 @@
 
     closeButtonLogIn.addEventListener("click", () => logIn.style.display = 'none');
 
+    linkHomePage.addEventListener("click", () => {
+        header.style.height = "45vw";
+        filterDiv.style.display = "flex";
+        headerText.style.display = "flex";
+        headerButton.style.display = "flex";
+        towns.style.display = "flex";
+        liveAnywhere.style.display = "flex";
+        onlineExperiences.style.display = "flex";
+        joinHosts.style.display = "block";
+    })
     filter.addEventListener("submit", (event) => {
         event.preventDefault();
         changeHomePage();
