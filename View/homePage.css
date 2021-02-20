@@ -103,7 +103,7 @@ body {
 
 /* header */
 #homePage-header {
-  background-image: url("pictures/main-picture.jpg");
+  background-image: url("../pictures/main-picture.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -627,6 +627,12 @@ body {
 .homePage-joinHosts-body > div > p {
   font-weight: bold;
   font-size: 1.5vw;
+}
+
+/* filtered homes section */
+#homePage-filtered-homes {
+  display: flex;
+  justify-content: center;
 }
 
 /* footer */

@@ -7,9 +7,9 @@
     <link rel = "icon" href =  
     "https://www.searchpng.com/wp-content/uploads/2019/02/Airbnb-Logo-PNG-Image-1024x1024.png" 
             type = "image/x-icon">
-    <link rel="stylesheet" href="HomePage.css" />
+    <link rel="stylesheet" href="View/homePage.css" />
     <link rel="stylesheet" href="OnlineExperiencesPage.css">
-    <link rel="stylesheet" href="Experiences.css">
+    <link rel="stylesheet" href="View/Experiences.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="Objects.css">
     <link
@@ -27,195 +27,195 @@
   </head>
   <body>
     <div id="PlacesToStay">
-    <header id="homePage-header">
-        <nav id="homePage-nav">
-          <div id="homePage-logo">
-            <i class="fab fa-airbnb"></i>
-            <p>airbnb</p>
-          </div>
-          <div id="homePage-navigation">
-            <a href="#PlacesToStay">Places to stay</a>
-            <a href="#Experiences">Experiences</a>
-            <a href="#Online-Experiences">Online Experiences</a>
-          </div>
-          <div id="becomeHost-language-profile">
-            <button id="homePage-hostButton">Become a host</button>
-            <button id="homePage-languageButton">
-              <i class="fas fa-globe-europe"></i>
-            </button>
-            <div id="profileInHeader">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-user-circle"></i>
+      <header id="homePage-header">
+          <nav id="homePage-nav">
+            <div id="homePage-logo">
+              <i class="fab fa-airbnb"></i>
+              <p>airbnb</p>
             </div>
-            <div id="dropdown-profileInHeader">
-              <div>
-               <a href="">Sign up</a>
-               <a id="dropdown-logIn">Log in</a>
-               <a href="https://www.airbnb.com/host/homes">Host your home</a>
-               <a href="https://www.airbnb.com/d/onlinehost">Host an experience</a>
-               <a href="https://www.airbnb.com/help">Help</a>
-              </div> 
+            <div id="homePage-navigation">
+              <a href="#PlacesToStay">Places to stay</a>
+              <a href="#Experiences">Experiences</a>
+              <a href="#Online-Experiences">Online Experiences</a>
             </div>
-          </div>
-        </nav>
-        <div id="homePage-filter">
-          <form>
-            <div id="location" class="homePage-filter-text">
-              <p class="homePage-filter-firstText">Location</p>
-              <p id="homePage-filter-location-secondText" class="homePage-filter-secondText">Where are you going?</p>
-              <input id="filter-input-location" type="text">
-            </div>
-            <div id="homePage-filter-checkIn-div" class="homePage-filter-text">
-              <p class="homePage-filter-firstText">Check in</p>
-              <p id="homePage-filter-checkIn-secondText" class="homePage-filter-secondText">Add dates</p>
-              <input id="filter-input-checkIn" type="date">
-            </div>
-            <div id="homePage-filter-checkOut-div" class="homePage-filter-text">
-              <p class="homePage-filter-firstText">Check out</p>
-              <p id="homePage-filter-checkOut-secondText" class="homePage-filter-secondText">Add dates</p>
-              <input id="filter-input-checkOut" type="date">
-            </div>
-            <div id="homePage-filter-guests-div" class="homePage-filter-text">
-              <p class="homePage-filter-firstText">Guests</p>
-              <p id="homePage-filter-guests-secondText" class="homePage-filter-secondText">Add guests</p>
-              <input id="filter-input-guests" type="number">
-            </div>
-            <div id="homePage-filter-submit-div" class="homePage-filter-text">
-               <button id="filter-input-submit" type="submit"><i class="fas fa-search"></i></button>
-            </div>
-          </form>
-          </div>
-          <p id="homePage-header-text">Go Near</p>
-          <button id="homePage-header-button">Explore nearby stays</button>
-            <div id="homePage-logIn">
-              <div id="close-logIn-homePage">
-                <i class="far fa-times-circle"></i>
+            <div id="becomeHost-language-profile">
+              <button id="homePage-hostButton">Become a host</button>
+              <button id="homePage-languageButton">
+                <i class="fas fa-globe-europe"></i>
+              </button>
+              <div id="profileInHeader">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-user-circle"></i>
               </div>
-              <p>Log In</p>
-              <form>
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username-logIn">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password-logIn">
-                <input type="submit" value="Continue" id="logIn-button">
-              </form>
-            </div>
-    </header>
-    <section id="homePage-towns">
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/a161fb95-6875-4aaa-aecd-3a46dead3220.jpg" alt="Varna">
-        <div  class="homePage-towns-container-text">
-          <p class="homePage-towns-bold-text">Varna</p>
-          <p>5 hour drive</p>
-      </div>
-      </div>
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/c2eba2e9-0d80-4704-9e2c-34ac16316c53.jpg" alt="Sveti Vlas">
-        <div class="homePage-towns-container-text">
-          <p class="homePage-towns-bold-text">Sveti Vlas</p>
-          <p>6 hour drive</p>
-        </div>
-      </div>
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/105b8160-1109-4678-b8aa-367ea9faebea.jpg" alt="Velingrad">
-        <div class="homePage-towns-container-text">
-           <p class="homePage-towns-bold-text">Velingrad</p>
-           <p>4.5 hour drive</p>
-        </div>
-      </div>
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/331e6c6a-ba64-4b51-81bf-4d6c610d45a3.jpg" alt="Belogradchik">
-        <div class="homePage-towns-container-text">
-          <p class="homePage-towns-bold-text">Belogradchik</p>
-          <p>3.5 hour drive</p>
-        </div>
-      </div>
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/847cfb7f-788d-42dc-9148-f375348dde76.jpg" alt="Burgas">
-        <div class="homePage-towns-container-text">
-          <p class="homePage-towns-bold-text">Burgas</p>
-          <p>5.5 hour drive</p>
-        </div>
-      </div >
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/ac2086c9-df0d-4085-94c0-94fe3fb94862.jpg" alt="Gabrovo">
-        <div class="homePage-towns-container-text">
-          <p class="homePage-towns-bold-text">Gabrovo</p>
-          <p>2.5 hour drive</p>
-        </div>
-      </div>
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/7d80bee1-a510-4950-a1a0-07a4fb25ec2e.jpg" alt="Sinemorets">
-        <div class="homePage-towns-container-text">
-          <p class="homePage-towns-bold-text">Sinemorets</p>
-          <p>7 hour drive</p>
-        </div>
-      </div>
-      <div class="homePage-towns-container">
-        <img src="https://a0.muscache.com/im/pictures/0445ba36-5684-4cca-9cb1-418a0ffdcd2f.jpg" alt="Byala">
-        <div class="homePage-towns-container-text">
-          <p class="homePage-towns-bold-text">Byala</p>
-          <p>5.5 hour drive</p>
-        </div>
-      </div>
-    </section>
-    <section id="homePage-liveAnywhere">
-      <p>Live Anywhere</p>
-      <div id="homePage-liveAnywhere-allContainers">
-        <div class="homePage-liveAnywhere-container">
-          <img src="https://a0.muscache.com/im/pictures/a0316ecb-e49b-4b3a-b6b6-c2876b820e8c.jpg" alt="Hause">
-          <p>Entire homes</p>
-        </div>
-        <div class="homePage-liveAnywhere-container">
-          <img src="https://a0.muscache.com/im/pictures/ff69ac49-64e7-4f4a-ae2b-ee01163d0790.jpg" alt="Cabin">
-          <p>Cabins and cottages</p>
-        </div>
-        <div class="homePage-liveAnywhere-container">
-          <img src="https://a0.muscache.com/im/pictures/ce6814ba-ed53-4d6e-b8f8-c0bbcf821011.jpg" alt="Outdoor hause">
-          <p>Unique stays</p>
-        </div>
-        <div class="homePage-liveAnywhere-container">
-          <img src="https://a0.muscache.com/im/pictures/fbe849a4-841a-41b3-b770-419402a6316f.jpg" alt="Dog">
-          <p>Pets Welcome</p>
-        </div>
-      </div>
-    </section>
-    <section id="homePage-onlineExperiences">
-      <div id="homePage-onlineExperiences-allElements">
-        <div id="homePage-onlineExperiences-head">
-          <div>
-            <p class="homePage-onlineExperiences-title">Online Experiences</p>
-            <p class="homePage-onlineExperiences-description">Interactive activities you can do together, led by expert hosts.</p>
-          </div>
-          <div>
-          <button id="homePage-onlineExperiences-button">Explore All</button>
-          </div>
-        </div>
-        <div id="homePage-onlineExperiences-body">
-          <div class="homePage-onlineExperiences-main-container">
-            <img src="https://a0.muscache.com/im/pictures/22f7dfe7-344e-4b55-88a0-3da9e0d45c97.jpg" alt="Italian grandma">
-            <p>Make handmade pasta with Italian grandmas</p>
-          </div>
-          <div class="homePage-onlineExperiences-other-containers">
-            <div class="homePage-onlineExperiences-container-for-second-containers">
-              <div class="homePage-onlineExperiences-second-containers">
-                <img src="https://a0.muscache.com/im/pictures/c4f98b13-4d9e-4376-b014-6b3e827c31d0.jpg" alt="woman">
-                <p>Practice mindful eating through zen philosophy</p>
-              </div>
-              <div class="homePage-onlineExperiences-second-containers">
-                <img src="https://a0.muscache.com/im/pictures/572d1f80-e3dc-4e48-b54b-5c802090e881.jpg" alt="woman">
-                <p>Get to know Argentina's famous Yerba Mate</p>
+              <div id="dropdown-profileInHeader">
+                <div>
+                <a href="">Sign up</a>
+                <a id="dropdown-logIn">Log in</a>
+                <a href="https://www.airbnb.com/host/homes">Host your home</a>
+                <a href="https://www.airbnb.com/d/onlinehost">Host an experience</a>
+                <a href="https://www.airbnb.com/help">Help</a>
+                </div> 
               </div>
             </div>
-            <div class="homePage-onlineExperiences-third-container">
-              <img src="https://a0.muscache.com/im/pictures/15c33e47-2301-43bf-8a3c-8c8aa1643aa9.jpg" alt="woman">
-              <p>Meditate to music with a Parisian concert pianist</p>
+          </nav>
+          <div id="homePage-filter">
+            <form id="homePage-filter-form">
+              <div id="location" class="homePage-filter-text">
+                <p class="homePage-filter-firstText">Location</p>
+                <p id="homePage-filter-location-secondText" class="homePage-filter-secondText">Where are you going?</p>
+                <input id="filter-input-location" type="text">
+              </div>
+              <div id="homePage-filter-checkIn-div" class="homePage-filter-text">
+                <p class="homePage-filter-firstText">Check in</p>
+                <p id="homePage-filter-checkIn-secondText" class="homePage-filter-secondText">Add dates</p>
+                <input id="filter-input-checkIn" type="date">
+              </div>
+              <div id="homePage-filter-checkOut-div" class="homePage-filter-text">
+                <p class="homePage-filter-firstText">Check out</p>
+                <p id="homePage-filter-checkOut-secondText" class="homePage-filter-secondText">Add dates</p>
+                <input id="filter-input-checkOut" type="date">
+              </div>
+              <div id="homePage-filter-guests-div" class="homePage-filter-text">
+                <p class="homePage-filter-firstText">Guests</p>
+                <p id="homePage-filter-guests-secondText" class="homePage-filter-secondText">Add guests</p>
+                <input id="filter-input-guests" type="number">
+              </div>
+              <div id="homePage-filter-submit-div" class="homePage-filter-text">
+                <button id="filter-input-submit" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </form>
+            </div>
+            <p id="homePage-header-text">Go Near</p>
+            <button id="homePage-header-button">Explore nearby stays</button>
+              <div id="homePage-logIn">
+                <div id="close-logIn-homePage">
+                  <i class="far fa-times-circle"></i>
+                </div>
+                <p>Log In</p>
+                <form>
+                  <label for="username">Username:</label>
+                  <input type="text" name="username" id="username-logIn">
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" id="password-logIn">
+                  <input type="submit" value="Continue" id="logIn-button">
+                </form>
+              </div>
+      </header>
+      <section id="homePage-towns">
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/a161fb95-6875-4aaa-aecd-3a46dead3220.jpg" alt="Varna">
+          <div  class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Varna</p>
+            <p>5 hour drive</p>
+        </div>
+        </div>
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/c2eba2e9-0d80-4704-9e2c-34ac16316c53.jpg" alt="Sveti Vlas">
+          <div class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Sveti Vlas</p>
+            <p>6 hour drive</p>
+          </div>
+        </div>
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/105b8160-1109-4678-b8aa-367ea9faebea.jpg" alt="Velingrad">
+          <div class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Velingrad</p>
+            <p>4.5 hour drive</p>
+          </div>
+        </div>
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/331e6c6a-ba64-4b51-81bf-4d6c610d45a3.jpg" alt="Belogradchik">
+          <div class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Belogradchik</p>
+            <p>3.5 hour drive</p>
+          </div>
+        </div>
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/847cfb7f-788d-42dc-9148-f375348dde76.jpg" alt="Burgas">
+          <div class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Burgas</p>
+            <p>5.5 hour drive</p>
+          </div>
+        </div >
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/ac2086c9-df0d-4085-94c0-94fe3fb94862.jpg" alt="Gabrovo">
+          <div class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Gabrovo</p>
+            <p>2.5 hour drive</p>
+          </div>
+        </div>
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/7d80bee1-a510-4950-a1a0-07a4fb25ec2e.jpg" alt="Sinemorets">
+          <div class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Sinemorets</p>
+            <p>7 hour drive</p>
+          </div>
+        </div>
+        <div class="homePage-towns-container">
+          <img src="https://a0.muscache.com/im/pictures/0445ba36-5684-4cca-9cb1-418a0ffdcd2f.jpg" alt="Byala">
+          <div class="homePage-towns-container-text">
+            <p class="homePage-towns-bold-text">Byala</p>
+            <p>5.5 hour drive</p>
+          </div>
+        </div>
+      </section>
+      <section id="homePage-liveAnywhere">
+        <p>Live Anywhere</p>
+        <div id="homePage-liveAnywhere-allContainers">
+          <div class="homePage-liveAnywhere-container">
+            <img src="https://a0.muscache.com/im/pictures/a0316ecb-e49b-4b3a-b6b6-c2876b820e8c.jpg" alt="Hause">
+            <p>Entire homes</p>
+          </div>
+          <div class="homePage-liveAnywhere-container">
+            <img src="https://a0.muscache.com/im/pictures/ff69ac49-64e7-4f4a-ae2b-ee01163d0790.jpg" alt="Cabin">
+            <p>Cabins and cottages</p>
+          </div>
+          <div class="homePage-liveAnywhere-container">
+            <img src="https://a0.muscache.com/im/pictures/ce6814ba-ed53-4d6e-b8f8-c0bbcf821011.jpg" alt="Outdoor hause">
+            <p>Unique stays</p>
+          </div>
+          <div class="homePage-liveAnywhere-container">
+            <img src="https://a0.muscache.com/im/pictures/fbe849a4-841a-41b3-b770-419402a6316f.jpg" alt="Dog">
+            <p>Pets Welcome</p>
+          </div>
+        </div>
+      </section>
+      <section id="homePage-onlineExperiences">
+        <div id="homePage-onlineExperiences-allElements">
+          <div id="homePage-onlineExperiences-head">
+            <div>
+              <p class="homePage-onlineExperiences-title">Online Experiences</p>
+              <p class="homePage-onlineExperiences-description">Interactive activities you can do together, led by expert hosts.</p>
+            </div>
+            <div>
+            <button id="homePage-onlineExperiences-button">Explore All</button>
+            </div>
+          </div>
+          <div id="homePage-onlineExperiences-body">
+            <div class="homePage-onlineExperiences-main-container">
+              <img src="https://a0.muscache.com/im/pictures/22f7dfe7-344e-4b55-88a0-3da9e0d45c97.jpg" alt="Italian grandma">
+              <p>Make handmade pasta with Italian grandmas</p>
+            </div>
+            <div class="homePage-onlineExperiences-other-containers">
+              <div class="homePage-onlineExperiences-container-for-second-containers">
+                <div class="homePage-onlineExperiences-second-containers">
+                  <img src="https://a0.muscache.com/im/pictures/c4f98b13-4d9e-4376-b014-6b3e827c31d0.jpg" alt="woman">
+                  <p>Practice mindful eating through zen philosophy</p>
+                </div>
+                <div class="homePage-onlineExperiences-second-containers">
+                  <img src="https://a0.muscache.com/im/pictures/572d1f80-e3dc-4e48-b54b-5c802090e881.jpg" alt="woman">
+                  <p>Get to know Argentina's famous Yerba Mate</p>
+                </div>
+              </div>
+              <div class="homePage-onlineExperiences-third-container">
+                <img src="https://a0.muscache.com/im/pictures/15c33e47-2301-43bf-8a3c-8c8aa1643aa9.jpg" alt="woman">
+                <p>Meditate to music with a Parisian concert pianist</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="homePage-joinHosts">
+      </section>
+      <section id="homePage-joinHosts">
       <p>Join millions of hosts on Airbnb</p>
       <div class="homePage-joinHosts-body">
         <div> 
@@ -231,8 +231,11 @@
           <p>Host an Experience</p>
         </div>
       </div>
-    </section>
-  </div>
+      </section>
+      <section id="homePage-filtered-homes">
+
+      </section>
+    </div>
     <div id="Experiences"></div>
     <div id="Online-Experiences">
        <header id="online-exp-header">
@@ -286,9 +289,6 @@
             <div id="onlineExperience-experiences-section-container"></div>
             <button id="btn-loadMore" class="button-loadMore">Load more</button>
       </section>
-    </div>
-    <div id="filteredHomesPage">
-
     </div>
     <div id="footer">
       <div>
@@ -357,10 +357,11 @@
     <script src="OnlineExperiences.js"></script>
     <script src="OnlineExperiencesManager.js"></script>
     <script src="index.js"></script>
-    <script src="homePage.js"></script>
-    <script src="Home.js"></script>
-    <script src="HomeManager.js"></script>
-    <script src="homeObjects.js"></script>
-    <script src="filteredHomesPage.js"></script>
+    <script src="Controller/homePage.js"></script>
+    <script src="Model/Home.js"></script>
+    <script src="Model/HomeManager.js"></script>
+    <script src="Model/homeObjects.js"></script>
+    <script src="Controller/filteredHomesPage.js"></script>
+    <script src="node_modules/handlebars/"></script>
   </body>
 </html>
