@@ -96,10 +96,14 @@ button {
 body {
   font-family: "Montserrat", sans-serif;
 }
+#PlacesToStay {
+  display: flex;
+  flex-direction: column;
+}
 
 /* header */
 #homePage-header {
-  background-image: url("pictures/main-picture.jpg");
+  background-image: url("../pictures/main-picture.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -201,7 +205,6 @@ body {
   height: 6vw;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   justify-content: space-around;
   margin-top: 3vh;
   background-color: honeydew;
@@ -412,7 +415,6 @@ body {
   margin-top: 5vw;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
 }
 .homePage-towns-container {
@@ -625,6 +627,12 @@ body {
 .homePage-joinHosts-body > div > p {
   font-weight: bold;
   font-size: 1.5vw;
+}
+
+/* filtered homes section */
+#homePage-filtered-homes {
+  display: flex;
+  justify-content: center;
 }
 
 /* footer */

@@ -1,0 +1,10 @@
+.home-template {
+  width: 10vw;
+  height: 10vw;
+  position: static;
+}
+
+.home-template > img {
+  width: 10vw;
+  height: 10vw;
+}

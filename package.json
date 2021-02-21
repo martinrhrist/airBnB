@@ -1,0 +1,23 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "This is our first project\r Project for making a site airbnb.com",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinrhrist/airBnB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinrhrist/airBnB/issues"
+  },
+  "homepage": "https://github.com/martinrhrist/airBnB#readme"
+}
