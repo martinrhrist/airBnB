@@ -114,6 +114,7 @@ function showOnlineExperiences(Experiences, container, start, showObjects) {
     let experienceCard = createEl("div");
     experienceCard.style.marginRight = "1vw";
     experienceCard.style.marginBottom = "1vw";
+    experienceCard.style.cursor = "pointer";
     experienceCard.class = "experience-card";
     let img = createEl("img");
     img.style.width = "14vw";

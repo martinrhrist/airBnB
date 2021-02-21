@@ -121,6 +121,7 @@
 }
 #filter-dates:hover {
   border: 0.1vw solid black;
+  cursor: pointer;
 }
 #filter-groupSize {
   border-radius: 40vw;
@@ -134,6 +135,7 @@
 }
 #filter-groupSize:hover {
   border: 0.1vw solid black;
+  cursor: pointer;
 }
 #vertical-line-section {
   height: 2vw;
@@ -183,4 +185,7 @@
 }
 .button-loadMore:hover {
   background-color: black;
+}
+.button-category {
+  cursor: pointer;
 }
