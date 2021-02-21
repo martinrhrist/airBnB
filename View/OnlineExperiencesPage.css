@@ -185,6 +185,7 @@
 }
 .button-loadMore:hover {
   background-color: black;
+  cursor: pointer;
 }
 .button-category {
   cursor: pointer;

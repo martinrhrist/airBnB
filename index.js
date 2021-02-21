@@ -1,6 +1,4 @@
 "use strict";
-//Initial object manager
-let myManager = new OnlineExperiencesManager();
 //filling all elements into the manager
 myObjects.forEach(function (object) {
   let onlineExperience = new OnlineExperiences(
@@ -49,43 +47,55 @@ function Router() {
 
   switch (url) {
     case "PlacesToStay": {
-      homePage.style.display = "flex";
-      expPage.style.display = "none";
-      onlineExpPage.style.display = "none";
-      myPageTitle.innerText = "Vacation Rentals, Homes, Experiences & Places - Airbnb";
+      placesToStay();
       break;
     }
     case "Experiences": {
-      homePage.style.display = "block";
-      expPage.style.display = "none";
-      onlineExpPage.style.display = "none";
+      experiences();
       break;
     }
     case "Online-Experiences": {
-      homePage.style.display = "none";
-      expPage.style.display = "none";
-      onlineExpPage.style.display = "block";
-      myPageTitle.innerText = "Online Experiences";
-      if (!hasLoaded) {
-        showOnlineExperiences(
-          myManager.onlineExperiences,
-          objectsSection,
-          startValue,
-          endValue
-        );
-        hasLoaded = true;
-      }
+      onlineExperiences();
       break;
     }
     default: {
-      homePage.style.display = "block";
-      expPage.style.display = "none";
-      onlineExpPage.style.display = "none";
+      defaultCase();
       break;
     }
   }
 }
-
+function placesToStay() {
+  homePage.style.display = "flex";
+  expPage.style.display = "none";
+  onlineExpPage.style.display = "none";
+  myPageTitle.innerText =
+    "Vacation Rentals, Homes, Experiences & Places - Airbnb";
+}
+function experiences() {
+  homePage.style.display = "block";
+  expPage.style.display = "none";
+  onlineExpPage.style.display = "none";
+}
+function onlineExperiences() {
+  homePage.style.display = "none";
+  expPage.style.display = "none";
+  onlineExpPage.style.display = "block";
+  myPageTitle.innerText = "Online Experiences";
+  if (!hasLoaded) {
+    showOnlineExperiences(
+      myManager.onlineExperiences,
+      objectsSection,
+      startValue,
+      endValue
+    );
+    hasLoaded = true;
+  }
+}
+function defaultCase() {
+  homePage.style.display = "block";
+  expPage.style.display = "none";
+  onlineExpPage.style.display = "none";
+}
 window.addEventListener("hashchange", Router);
 window.addEventListener("DOMContentLoaded", Router);
 function showOnlineExperiences(Experiences, container, start, showObjects) {
