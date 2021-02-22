@@ -88,6 +88,7 @@
             </div>
             <p id="homePage-header-text">Go Near</p>
             <button id="homePage-header-button">Explore nearby stays</button>
+            <div id="homePage-login-external-div">
               <div id="homePage-logIn">
                 <div id="close-logIn-homePage">
                   <i class="far fa-times-circle"></i>
@@ -101,6 +102,8 @@
                   <input type="submit" value="Continue" id="logIn-button">
                 </form>
               </div>
+            </div>
+             
       </header>
       <section id="homePage-towns">
         <div class="homePage-towns-container">
@@ -233,7 +236,19 @@
         </div>
       </div>
       </section>
-      <section id="homePage-filtered-homes">
+      <section id="homePage-filtered-homes-section">
+        <h2 id="title-filtered-homes"></h2>
+        <div id="filtered-homes-buttons">
+         <button id="button-ascending-price-homes">Ascending Price</button>
+         <button id="button-descending-price-homes">Descending Price</button>
+         <button id="button-capacity-homes">Capacity</button>
+         <button id="button-booked-homes">Booked</button>
+         <button id="button-petsAllowed-homes">Pets Allowed</button>
+         <button id="button-apartments-homes">Apartments</button>
+         <button id="button-cabinsAndCottages-homes">Cabins and Cottages</button>
+         <button id="butoon-unique-homes">Unique Homes</button>
+        </div>
+        <div id="homePage-filtered-homes-div"></div>
       </section>
     </div>
     <div id="Experiences"></div>
@@ -354,13 +369,15 @@
       </div>
     </div>
     <script id="home-template" type="text/x-handlebars-template">
-  <div class="home-template">
-    <img src= {{image}} alt="home">
-    <div class="text-template">
-      <p>{{name}}</p>
-      <p>{{price}}</p>
-    </div>
-  </div>
+      {{#each filteredHomes}}
+      <div class="home-template">
+        <img src= {{image}} alt="home">
+        <div class="text-template">
+          <p>{{name}}</p>
+          <p>{{price}}</p>
+        </div>
+      </div>
+      {{/each}}
 </script>
    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="Model/onlineExperiencesObjects.js"></script>
