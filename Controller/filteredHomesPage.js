@@ -14,14 +14,32 @@
     let buttonDescendingPrice = document.getElementById("button-descending-price-homes");
     let buttonCapacity = document.getElementById("button-capacity-homes");
     let buttonBooked = document.getElementById("button-booked-homes");
-    let buttonPetsAllowed = document.getElementById("button-petsAllowed-homes");
-    let buttonApartments = document.getElementById("button-apartments-homes");
-    let buttonCabinsAndCottages = document.getElementById("button-cabinsAndCottages-homes");
-    let buttonUniqueHomes = document.getElementById("butoon-unique-homes");
+
+    let buttonPetsAllowed = {
+        "element": document.getElementById("button-petsAllowed-homes"),
+        "click": false,
+        "type": "pets",
+    };
+    let buttonApartments = {
+        "element": document.getElementById("button-apartments-homes"),
+        "click": false,
+        "type": "apartment",
+    };
+    let buttonCabinsAndCottages = {
+        "element": document.getElementById("button-cabinsAndCottages-homes"),
+        "click": false,
+        "type": "cottage/cabin",
+    };
+    let buttonUniqueHomes = {
+        "element": document.getElementById("butoon-unique-homes"),
+        "click": false,
+        "type": "unique",
+    };
 
     //arrays 
-    let filteredHomes = [];
-    let additionallyFilteredHomes = [];
+    let filteredHomes;
+    let additionallyFilteredHomes;
+    let arrayWithButtons = [buttonApartments, buttonCabinsAndCottages, buttonUniqueHomes];
 
     //test objects
     homes.forEach(home => homeManager.addHome(home));
@@ -32,34 +50,87 @@
         let filterTown = filterInputTown.value;
         let filterCapacity = filterInputCapacity.value;
         title.innerText = `Choose from the best locations in ${filterTown}!`;
-        filteredHomes = { filteredHomes: homeManager.filter(filterTown, filterCapacity) };
-        showHomes(filteredHomes);
+        filteredHomes = { homes: homeManager.filter(filterTown, filterCapacity) };
+        additionallyFilteredHomes = { homes: homeManager.filter(filterTown, filterCapacity) };
+        showHomes(additionallyFilteredHomes);
         filter.reset();
     });
 
     buttonAscendingPrice.addEventListener("click", () => {
-        additionallyFilteredHomes = orderByAscendingPrice(filteredHomes.filteredHomes);
-        showHomes(filteredHomes);
+        additionallyFilteredHomes.homes = orderByAscendingPrice(additionallyFilteredHomes.homes);
+        showHomes(additionallyFilteredHomes);
     });
 
     buttonDescendingPrice.addEventListener("click", () => {
-        additionallyFilteredHomes = orderByDescendingPrice(filteredHomes.filteredHomes);
-        showHomes(filteredHomes);
+        additionallyFilteredHomes.homes = orderByDescendingPrice(additionallyFilteredHomes.homes);
+        showHomes(additionallyFilteredHomes);
     });
 
     buttonCapacity.addEventListener("click", () => {
-        additionallyFilteredHomes = orderByCapacity(filteredHomes.filteredHomes);
-        showHomes(filteredHomes);
+        additionallyFilteredHomes.homes = orderByCapacity(additionallyFilteredHomes.homes);
+        showHomes(additionallyFilteredHomes);
     });
 
     buttonBooked.addEventListener("click", () => {
-        additionallyFilteredHomes = orderByTimesBooked(filteredHomes.filteredHomes);
-        showHomes(filteredHomes);
+        additionallyFilteredHomes.homes = orderByTimesBooked(additionallyFilteredHomes.homes);
+        showHomes(additionallyFilteredHomes);
     });
 
-    function showHomes(array) {
+    buttonPetsAllowed.element.addEventListener("click", () => {
+        buttonPetsAllowed.click === true ? buttonPetsAllowed.click = false : buttonPetsAllowed.click = true;
+        buttonPetsAllowed.click ? buttonPetsAllowed.element.style.fontWeight = "bold" : buttonPetsAllowed.element.style.fontWeight = "normal";
+        createCustomArrayfromHomesWithPets();
+    });
+
+    buttonApartments.element.addEventListener("click", () => {
+        buttonApartments.click === true ? buttonApartments.click = false : buttonApartments.click = true;
+        buttonApartments.click ? buttonApartments.element.style.fontWeight = "bold" : buttonApartments.element.style.fontWeight = "normal";
+        createCustomArrayfromHomes();
+
+    });
+
+    buttonCabinsAndCottages.element.addEventListener("click", () => {
+        buttonCabinsAndCottages.click === true ? buttonCabinsAndCottages.click = false : buttonCabinsAndCottages.click = true;
+        buttonCabinsAndCottages.click ? buttonCabinsAndCottages.element.style.fontWeight = "bold" : buttonCabinsAndCottages.element.style.fontWeight = "normal";
+        createCustomArrayfromHomes();
+
+    });
+
+    buttonUniqueHomes.element.addEventListener("click", () => {
+        buttonUniqueHomes.click === true ? buttonUniqueHomes.click = false : buttonUniqueHomes.click = true;
+        buttonUniqueHomes.click ? buttonUniqueHomes.element.style.fontWeight = "bold" : buttonUniqueHomes.element.style.fontWeight = "normal";
+        createCustomArrayfromHomes();
+
+    });
+
+    function createCustomArrayfromHomesWithPets() {
+        if (buttonPetsAllowed.click === true) {
+            additionallyFilteredHomes.homes = additionallyFilteredHomes.homes.filter(home => home.pets === true);
+            showHomes(additionallyFilteredHomes);
+        } else {
+            createCustomArrayfromHomes();
+        }
+    }
+    
+    function createCustomArrayfromHomes() {
+        additionallyFilteredHomes.homes = [];
+        let counterClick = 0;
+        arrayWithButtons.forEach(button => {
+            if (button.click === true) {
+                counterClick++;
+                let array = filterByType(filteredHomes.homes, button.type);
+                additionallyFilteredHomes.homes.push(...array);
+            }
+        });
+        if (counterClick === 0) {
+            additionallyFilteredHomes.homes.push(...filteredHomes.homes);
+        }
+        showHomes(additionallyFilteredHomes);
+    }
+
+    function showHomes(object) {
         filteredHomesDiv.innerHTML = "";
-        let html = template(array);
+        let html = template(object);
         filteredHomesDiv.innerHTML = html;
     }
 
