@@ -1,5 +1,5 @@
-(function(){
-    
+(function () {
+
     // inputs
     let homePageFilterLocation = getById("filter-input-location");
     let homePageFilterCheckIn = getById("filter-input-checkIn");
@@ -11,6 +11,7 @@
     let homePageFilterCheckInDiv = getById("homePage-filter-checkIn-div");
     let homePageFilterCheckOutDiv = getById("homePage-filter-checkOut-div");
     let homePageFilterGuestsDiv = getById("homePage-filter-guests-div");
+    let homePageLoginDiv = getById("homePage-login-external-div");
 
     // paragraphs
     let homePageFilterLocationParagraph = document.getElementById("homePage-filter-location-secondText");
@@ -34,7 +35,7 @@
     let liveAnywhere = document.getElementById("homePage-liveAnywhere");
     let onlineExperiences = document.getElementById("homePage-onlineExperiences");
     let joinHosts = document.getElementById("homePage-joinHosts");
-    let filteredHomes = document.getElementById("homePage-filtered-homes");
+    let filteredHomes = document.getElementById("homePage-filtered-homes-section");
 
     // elements in header who change after user submit filter form
     let filterDiv = document.getElementById("homePage-filter");
@@ -69,11 +70,17 @@
     profileInHeader.addEventListener("click", () => { dropdownProfileInHeader.style.visibility === 'hidden' ? dropdownProfileInHeader.style.visibility = 'visible' : dropdownProfileInHeader.style.visibility = "hidden" });
 
     linkLogIn.addEventListener("click", () => {
-        logIn.style.display = 'block';
+        homePageLoginDiv.style.display = "block";
+        logIn.style.display = 'flex';
+        window.addEventListener('scroll', scroll);
         dropdownProfileInHeader.style.visibility = "hidden";
     });
 
-    closeButtonLogIn.addEventListener("click", () => logIn.style.display = 'none');
+    closeButtonLogIn.addEventListener("click", () => {
+        homePageLoginDiv.style.display = 'none';
+        logIn.style.display = 'none';
+        window.removeEventListener('scroll', scroll);
+    });
 
     linkHomePage.addEventListener("click", () => {
         header.style.height = "45vw";
@@ -84,7 +91,9 @@
         liveAnywhere.style.display = "flex";
         onlineExperiences.style.display = "flex";
         joinHosts.style.display = "block";
-    })
+        filteredHomes.style.display = "none";
+    });
+    
     filter.addEventListener("submit", (event) => {
         event.preventDefault();
         changeHomePage();
@@ -99,5 +108,9 @@
         liveAnywhere.style.display = "none";
         onlineExperiences.style.display = "none";
         joinHosts.style.display = "none";
+        filteredHomes.style.display = "flex";
+    }
+    function scroll() {
+        window.scrollTo(0, 0);
     }
 })();

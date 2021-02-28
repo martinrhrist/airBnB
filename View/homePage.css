@@ -95,6 +95,7 @@ button {
 /* style */
 body {
   font-family: "Montserrat", sans-serif;
+
 }
 #PlacesToStay {
   display: flex;
@@ -341,8 +342,16 @@ body {
 }
 
 /* LogIn */
+#homePage-login-external-div {
+position: absolute;
+width: 98.7vw;
+height: 100vh;
+background-color: rgb(19, 19, 19, 0.7);
+top:0;
+display: none;
+
+}
 #homePage-logIn {
-  position: relative;
   margin-left: 35vw;
   top: 5vw;
   position: absolute;
@@ -350,7 +359,6 @@ body {
   width: 30vw;
   height: 25vw;
   border-radius: 3vw;
-  display: flex;
   flex-direction: column;
   align-content: center;
   display: none;
