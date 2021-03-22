@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="View/Experiences.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="View/Objects.css">
+    <link rel="stylesheet" href="View/detailedHome.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -50,7 +51,7 @@
               </div>
               <div id="dropdown-profileInHeader">
                 <div>
-                <a href="">Sign up</a>
+                <a id="dropdown-signIn">Sign up</a>
                 <a id="dropdown-logIn">Log in</a>
                 <a href="https://www.airbnb.com/host/homes">Host your home</a>
                 <a href="https://www.airbnb.com/d/onlinehost">Host an experience</a>
@@ -60,11 +61,11 @@
             </div>
           </nav>
           <div id="homePage-filter">
-            <form id="homePage-filter-form">
+            <form autocomplete="off" id="homePage-filter-form">
               <div id="location" class="homePage-filter-text">
                 <p class="homePage-filter-firstText">Location</p>
                 <p id="homePage-filter-location-secondText" class="homePage-filter-secondText">Where are you going?</p>
-                <input id="filter-input-location" type="text">
+                <input placeholder="Town" id="filter-input-location" type="text">
               </div>
               <div id="homePage-filter-checkIn-div" class="homePage-filter-text">
                 <p class="homePage-filter-firstText">Check in</p>
@@ -102,6 +103,26 @@
                   <input type="submit" value="Continue" id="logIn-button">
                 </form>
               </div>
+            </div>
+            <div id="homePage-signIn-external-div">
+              <div id="homePage-signIn">
+                <div id="close-signIn-homePage">
+                  <i class="far fa-times-circle"></i>
+                </div>
+                <p>Sign In</p>
+                <form>
+                  <label for="username">Username:</label>
+                  <input type="text" name="username" id="username-signIn">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name-signIn">
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" id="password-signIn">
+                  <label  for="passwordRepeat">Repeat Password:</label>
+                  <input type="password" name="passwordRepeat" id="password-signIn-Repeat">
+                  <input type="submit" value="Continue" id="signIn-button">
+                </form>
+              </div>
+
             </div>
              
       </header>
@@ -166,19 +187,19 @@
       <section id="homePage-liveAnywhere">
         <p>Live Anywhere</p>
         <div id="homePage-liveAnywhere-allContainers">
-          <div class="homePage-liveAnywhere-container">
+          <div id="liveAnywhere-div-entireHomes" class="homePage-liveAnywhere-container">
             <img src="https://a0.muscache.com/im/pictures/a0316ecb-e49b-4b3a-b6b6-c2876b820e8c.jpg" alt="Hause">
             <p>Entire homes</p>
           </div>
-          <div class="homePage-liveAnywhere-container">
+          <div id="liveAnywhere-div-cabinsAndCottages" class="homePage-liveAnywhere-container">
             <img src="https://a0.muscache.com/im/pictures/ff69ac49-64e7-4f4a-ae2b-ee01163d0790.jpg" alt="Cabin">
             <p>Cabins and cottages</p>
           </div>
-          <div class="homePage-liveAnywhere-container">
+          <div id="liveAnywhere-div-uniqueStays" class="homePage-liveAnywhere-container">
             <img src="https://a0.muscache.com/im/pictures/ce6814ba-ed53-4d6e-b8f8-c0bbcf821011.jpg" alt="Outdoor hause">
             <p>Unique stays</p>
           </div>
-          <div class="homePage-liveAnywhere-container">
+          <div id="liveAnywhere-div-petsWelcome" class="homePage-liveAnywhere-container">
             <img src="https://a0.muscache.com/im/pictures/fbe849a4-841a-41b3-b770-419402a6316f.jpg" alt="Dog">
             <p>Pets Welcome</p>
           </div>
@@ -251,6 +272,120 @@
         <div id="homePage-filtered-homes-div"></div>
       </section>
     </div>
+    <div id="detailed-home">
+      <section id="detailed-home-header-section">
+         <div id="left-side-detailed-home-head">
+        <div id="head-detailed-home">
+          <div>
+             <h1 id="title-detailed-home"></h1>
+            <i class="fas fa-heart"></i>
+          </div>
+          <p id="people-reserved-this-home"></p>
+        </div>
+        <p id="description-detailed-home"></p>
+        <div id="detailed-home-buttons">
+          <button class="detailed-home-buttons" id="reserve-home">Reserve</button>
+        </div>
+      </div>
+        <img id="detailed-home-image" src="" alt="home">
+      </section>
+      <section id="home-equipment">
+        <h1>Amenities</h1>
+        <div id="equipment">
+<div class="equipment">
+        <div id="parkingGreyColorOfAmenities">
+          <i  class="fas fa-car greyColorOfAmenities"></i>
+        </div>
+        <div id="parkingWhiteColorOfAmenities">
+          <i  class="fas fa-car whiteColorOfAmenities"></i>
+        </div>
+        <p>Parking</p>
+      </div>
+      <div class="equipment">
+        <div id="swimmingGreyColorOfAmenities">
+          <i class="fas fa-swimming-pool greyColorOfAmenities"></i>
+        </div>
+        <div id="swimmingWhiteColorOfAmenities">
+          <i class="fas fa-swimming-pool whiteColorOfAmenities"></i>
+        </div>
+        <p>Swimming</p>
+      </div>
+      <div class="equipment">
+        <div id="smokingGreyColorOfAmenities">
+          <i class="fas fa-smoking greyColorOfAmenities"></i>
+        </div>
+        <div id="smokingWhiteColorOfAmenities">
+          <i class="fas fa-smoking whiteColorOfAmenities"></i>
+        </div>
+        <p>Smoking</p>
+      </div>
+      <div class="equipment">
+        <div id="bathGreyColorOfAmenities">
+          <i class="fas fa-bath greyColorOfAmenities"></i>
+        </div>
+        <div id="bathWhiteColorOfAmenities">
+          <i class="fas fa-bath whiteColorOfAmenities"></i>
+        </div>
+        <p>Bath</p>
+      </div>
+      <div class="equipment">
+        <div id="airGreyColorOfAmenities">
+          <i class="fas fa-fan greyColorOfAmenities"></i>
+        </div>
+        <div id="airWhiteColorOfAmenities">
+          <i class="fas fa-fan whiteColorOfAmenities"></i>
+        </div>
+        <p>Air conditioning</p>
+      </div>
+      <div class="equipment">
+        <div id="wifiGreyColorOfAmenities">
+           <i class="fas fa-wifi greyColorOfAmenities"></i>
+        </div>
+        <div id="wifiWhiteColorOfAmenities">
+          <i class="fas fa-wifi whiteColorOfAmenities"></i>
+        </div>
+        <p>Wifi</p>
+      </div>
+      <div class="equipment">
+        <div id="tvGreyColorOfAmenities">
+          <i class="fas fa-tv greyColorOfAmenities"></i>
+        </div>
+        <div id="tvWhiteColorOfAmenities">
+          <i class="fas fa-tv whiteColorOfAmenities"></i>
+        </div>
+        <p>TV</p>
+      </div>
+      <div class="equipment">
+        <div id="coffeeGreyColorOfAmenities">
+          <i class="fas fa-coffee greyColorOfAmenities"></i>
+        </div>
+        <div id="coffeeWhiteColorOfAmenities">
+          <i class="fas fa-coffee whiteColorOfAmenities"></i>
+        </div>
+        <p>Coffee Machine</p>
+      </div>
+      <div class="equipment">
+        <div id="accessibilityGreyColorOfAmenities">
+          <i class="fas fa-wheelchair greyColorOfAmenities"></i>
+        </div>
+        <div id="accessibilityWhiteColorOfAmenities">
+          <i class="fas fa-wheelchair whiteColorOfAmenities"></i>
+        </div>
+        <p>Accessibility</p>
+      </div>
+      <div class="equipment">
+        <div id="basicGreyColorOfAmenities">
+          <i class="fas fa-toilet-paper greyColorOfAmenities"></i>
+        </div>
+        <div id="basicWhiteColorOfAmenities">
+          <i class="fas fa-toilet-paper whiteColorOfAmenities"></i>
+        </div>
+        <p>Basic amenities</p>
+      </div>
+        </div>
+      </section>
+      <div id="map-home"></div>
+      </div>
     <div id="Experiences"></div>
     <div id="Online-Experiences">
        <header id="online-exp-header">
@@ -370,11 +505,11 @@
     </div>
     <script id="home-template" type="text/x-handlebars-template">
       {{#each homes}}
-      <div class="home-template">
+      <div id="{{id}}" class="home-template">
         <img src= {{image}} alt="home">
         <div class="text-template">
-          <p>{{name}}</p>
-          <p>{{price}}</p>
+          <p  class="template-title">{{name}}</p>
+          <p  class="template-price">{{price}} BGN / Night</p>
         </div>
       </div>
       {{/each}}

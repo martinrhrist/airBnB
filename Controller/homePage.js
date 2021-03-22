@@ -1,17 +1,18 @@
 (function () {
 
     // inputs
-    let homePageFilterLocation = getById("filter-input-location");
-    let homePageFilterCheckIn = getById("filter-input-checkIn");
-    let homePageFilterCheckOut = getById("filter-input-checkOut");
-    let homePageFilterGuests = getById("filter-input-guests");
+    let homePageFilterLocation = document.getElementById("filter-input-location");
+    let homePageFilterCheckIn = document.getElementById("filter-input-checkIn");
+    let homePageFilterCheckOut = document.getElementById("filter-input-checkOut");
+    let homePageFilterGuests = document.getElementById("filter-input-guests");
 
     // divs
-    let homePageFilterLocationDiv = getById("location");
-    let homePageFilterCheckInDiv = getById("homePage-filter-checkIn-div");
-    let homePageFilterCheckOutDiv = getById("homePage-filter-checkOut-div");
-    let homePageFilterGuestsDiv = getById("homePage-filter-guests-div");
-    let homePageLoginDiv = getById("homePage-login-external-div");
+    let homePageFilterLocationDiv = document.getElementById("location");
+    let homePageFilterCheckInDiv = document.getElementById("homePage-filter-checkIn-div");
+    let homePageFilterCheckOutDiv = document.getElementById("homePage-filter-checkOut-div");
+    let homePageFilterGuestsDiv = document.getElementById("homePage-filter-guests-div");
+    let homePageLoginDiv = document.getElementById("homePage-login-external-div");
+    let homePageSignInDiv = document.getElementById("homePage-signIn-external-div");
 
     // paragraphs
     let homePageFilterLocationParagraph = document.getElementById("homePage-filter-location-secondText");
@@ -20,30 +21,25 @@
     let homePageFilterGuestsParagraph = document.getElementById("homePage-filter-guests-secondText");
 
     // elements who open and close
-    let profileInHeader = getById("profileInHeader");
-    let dropdownProfileInHeader = getById("dropdown-profileInHeader");
-    let logIn = getById("homePage-logIn");
-    let linkLogIn = getById("dropdown-logIn");
-    let closeButtonLogIn = getById("close-logIn-homePage");
+    let profileInHeader = document.getElementById("profileInHeader");
+    let dropdownProfileInHeader = document.getElementById("dropdown-profileInHeader");
+    let logIn = document.getElementById("homePage-logIn");
+    let linkLogIn = document.getElementById("dropdown-logIn");
+    let closeButtonLogIn = document.getElementById("close-logIn-homePage");
+    let linkSignUp = document.getElementById("dropdown-signIn");
+    let closeButtonSignIn = document.getElementById("close-signIn-homePage");
+    let signIn = document.getElementById("homePage-signIn");
 
     //filter
     let filter = document.getElementById("homePage-filter-form");
 
-    // sections in Home Page
-    let header = document.getElementById("homePage-header");
-    let towns = document.getElementById("homePage-towns");
-    let liveAnywhere = document.getElementById("homePage-liveAnywhere");
-    let onlineExperiences = document.getElementById("homePage-onlineExperiences");
-    let joinHosts = document.getElementById("homePage-joinHosts");
-    let filteredHomes = document.getElementById("homePage-filtered-homes-section");
+    // elements who goes to filtered homes 
+    let entireHomesLink = document.getElementById("liveAnywhere-div-entireHomes");
+    let cabinsLink = document.getElementById("liveAnywhere-div-cabinsAndCottages");
+    let uniqueLink = document.getElementById("liveAnywhere-div-uniqueStays");
+    let petsAllowedLink = document.getElementById("liveAnywhere-div-petsWelcome");
 
-    // elements in header who change after user submit filter form
-    let filterDiv = document.getElementById("homePage-filter");
-    let headerText = document.getElementById("homePage-header-text");
-    let headerButton = document.getElementById("homePage-header-button");
-
-    let linkHomePage = document.getElementById("linkPlacesToStay");
-
+    let logo = document.getElementById("homePage-logo");
 
     //EventListeners
     homePageFilterLocationDiv.addEventListener("click", function () {
@@ -69,6 +65,12 @@
 
     profileInHeader.addEventListener("click", () => { dropdownProfileInHeader.style.visibility === 'hidden' ? dropdownProfileInHeader.style.visibility = 'visible' : dropdownProfileInHeader.style.visibility = "hidden" });
 
+    linkSignUp.addEventListener("click",() => {
+        homePageSignInDiv.style.display = "block";
+        signIn.style.display = 'flex';
+        window.addEventListener('scroll', scroll);
+        dropdownProfileInHeader.style.visibility = "hidden";
+    })
     linkLogIn.addEventListener("click", () => {
         homePageLoginDiv.style.display = "block";
         logIn.style.display = 'flex';
@@ -81,35 +83,43 @@
         logIn.style.display = 'none';
         window.removeEventListener('scroll', scroll);
     });
-
-    linkHomePage.addEventListener("click", () => {
-        header.style.height = "45vw";
-        filterDiv.style.display = "flex";
-        headerText.style.display = "flex";
-        headerButton.style.display = "flex";
-        towns.style.display = "flex";
-        liveAnywhere.style.display = "flex";
-        onlineExperiences.style.display = "flex";
-        joinHosts.style.display = "block";
-        filteredHomes.style.display = "none";
-    });
     
+    closeButtonSignIn.addEventListener("click", () => {
+        homePageSignInDiv.style.display = 'none';
+        signIn.style.display = 'none';
+        window.removeEventListener('scroll', scroll);
+    });
+
     filter.addEventListener("submit", (event) => {
         event.preventDefault();
-        changeHomePage();
+        location.hash = "homePage-filtered-homes-section";
+        homePageFilterLocationParagraph.style.display = "flex";
+        homePageFilterLocation.style.display = "none";
+        homePageFilterCheckInParagraph.style.display = 'flex';
+        homePageFilterCheckIn.style.display = 'none';
+        homePageFilterCheckOutParagraph.style.display = 'flex';
+        homePageFilterCheckOut.style.display = 'none';
+        homePageFilterGuestsParagraph.style.display = 'flex';
+        homePageFilterGuests.style.display = 'none';
     });
 
-    function changeHomePage() {
-        header.style.height = "7vw";
-        filterDiv.style.display = "none";
-        headerText.style.display = "none";
-        headerButton.style.display = "none";
-        towns.style.display = "none";
-        liveAnywhere.style.display = "none";
-        onlineExperiences.style.display = "none";
-        joinHosts.style.display = "none";
-        filteredHomes.style.display = "flex";
-    }
+    logo.addEventListener("click", () => {
+        location.hash = 'PlacesToStay';
+    });
+
+    entireHomesLink.addEventListener("click", () => {
+        location.hash = "homePage-filtered-homes-section";
+    });
+    cabinsLink.addEventListener("click", () => {
+        location.hash = "homePage-filtered-homes-section";
+    });
+    uniqueLink.addEventListener("click", () => {
+        location.hash = "homePage-filtered-homes-section";
+    });
+    petsAllowedLink.addEventListener("click", () => {
+        location.hash = "homePage-filtered-homes-section";
+    });
+
     function scroll() {
         window.scrollTo(0, 0);
     }

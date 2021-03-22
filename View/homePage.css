@@ -268,6 +268,7 @@ body {
   display: none;
 }
 
+
 #filter-input-checkIn {
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;
@@ -417,6 +418,83 @@ display: none;
 .fa-times-circle {
   display: flex;
 }
+/* sign In */
+#homePage-signIn-external-div {
+position: absolute;
+width: 98.7vw;
+height: 100vh;
+background-color: rgb(19, 19, 19, 0.7);
+top:0;
+display: none;
+}
+#homePage-signIn {
+  margin-left: 35vw;
+  top: 5vw;
+  position: absolute;
+  background-color: rgb(237, 238, 236);
+  width: 30vw;
+  height: 35vw;
+  border-radius: 3vw;
+  flex-direction: column;
+  align-content: center;
+  display: none;
+}
+#homePage-signIn > p {
+  display: flex;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  font-size: 2vw;
+  font-weight: bold;
+}
+#homePage-signIn > form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#homePage-signIn > form > label {
+  margin-bottom: 0.5vw;
+}
+
+#username-signIn,
+#password-signIn,
+#name-signIn,
+#password-signIn-Repeat
+ {
+  margin-bottom: 0.5vw;
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+#signIn-button {
+  padding: 1vw 1vw;
+  margin-top: 3vw;
+  border-radius: 2vw;
+  border: 1px solid grey;
+  outline: none;
+}
+
+#signIn-button:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+#homePage-signIn > div {
+  margin-top: 1.5vw;
+  width: 28vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-times-circle {
+  display: flex;
+}
+
 
 /* Section Towns */
 #homePage-towns {

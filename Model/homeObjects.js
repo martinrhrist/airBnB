@@ -9,6 +9,18 @@ let homes = [
         "location": "Sofia",
         "booked": 10,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true, 
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 2,
@@ -20,6 +32,18 @@ let homes = [
         "location": "Sofia",
         "booked": 56,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 3,
@@ -31,6 +55,18 @@ let homes = [
         "location": "Varna",
         "booked": 80,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 4,
@@ -42,6 +78,18 @@ let homes = [
         "location": "Varna",
         "booked": 34,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 5,
@@ -53,6 +101,18 @@ let homes = [
         "location": "Sofia",
         "booked": 97,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 6,
@@ -64,6 +124,18 @@ let homes = [
         "location": "Sofia",
         "booked": 34,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 7,
@@ -75,6 +147,18 @@ let homes = [
         "location": "Sofia",
         "booked": 95,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 8,
@@ -86,6 +170,18 @@ let homes = [
         "location": "Sofia",
         "booked": 123,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 9,
@@ -97,6 +193,18 @@ let homes = [
         "location": "Sofia",
         "booked": 54,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 10,
@@ -108,6 +216,18 @@ let homes = [
         "location": "Sofia",
         "booked": 15,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 11,
@@ -119,6 +239,18 @@ let homes = [
         "location": "Varna",
         "booked": 98,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 12,
@@ -130,6 +262,18 @@ let homes = [
         "location": "Varna",
         "booked": 10,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 13,
@@ -141,6 +285,18 @@ let homes = [
         "location": "Varna",
         "booked": 34,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 14,
@@ -152,6 +308,18 @@ let homes = [
         "location": "Varna",
         "booked": 340,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 15,
@@ -163,6 +331,18 @@ let homes = [
         "location": "Varna",
         "booked": 23,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 16,
@@ -174,6 +354,18 @@ let homes = [
         "location": "Sofia",
         "booked": 231,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 17,
@@ -185,6 +377,18 @@ let homes = [
         "location": "Sofia",
         "booked": 14,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 18,
@@ -196,6 +400,18 @@ let homes = [
         "location": "Varna",
         "booked": 879,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 19,
@@ -207,6 +423,18 @@ let homes = [
         "location": "Sofia",
         "booked": 78,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 20,
@@ -218,6 +446,18 @@ let homes = [
         "location": "Varna",
         "booked": 231,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 21,
@@ -229,6 +469,18 @@ let homes = [
         "location": "Varna",
         "booked": 112,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 22,
@@ -240,6 +492,18 @@ let homes = [
         "location": "Varna",
         "booked": 531,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 23,
@@ -251,6 +515,18 @@ let homes = [
         "location": "Varna",
         "booked": 243,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 24,
@@ -262,6 +538,18 @@ let homes = [
         "location": "Varna",
         "booked": 432,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 25,
@@ -273,6 +561,18 @@ let homes = [
         "location": "Varna",
         "booked": 14,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 26,
@@ -284,6 +584,18 @@ let homes = [
         "location": "Varna",
         "booked": 632,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 27,
@@ -295,6 +607,18 @@ let homes = [
         "location": "Varna",
         "booked": 123,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 28,
@@ -306,6 +630,18 @@ let homes = [
         "location": "Varna",
         "booked": 91,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 29,
@@ -317,6 +653,18 @@ let homes = [
         "location": "Varna",
         "booked": 24,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 30,
@@ -328,6 +676,18 @@ let homes = [
         "location": "Varna",
         "booked": 543,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 31,
@@ -339,6 +699,18 @@ let homes = [
         "location": "Sofia",
         "booked": 345,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 32,
@@ -350,6 +722,18 @@ let homes = [
         "location": "Sofia",
         "booked": 19,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 33,
@@ -361,6 +745,18 @@ let homes = [
         "location": "Sofia",
         "booked": 111,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 34,
@@ -372,6 +768,18 @@ let homes = [
         "location": "Sofia",
         "booked": 421,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 35,
@@ -383,6 +791,18 @@ let homes = [
         "location": "Sofia",
         "booked": 23,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 36,
@@ -394,6 +814,18 @@ let homes = [
         "location": "Sofia",
         "booked": 921,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 37,
@@ -405,6 +837,18 @@ let homes = [
         "location": "Sofia",
         "booked": 231,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 38,
@@ -416,6 +860,18 @@ let homes = [
         "location": "Sofia",
         "booked": 241,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 39,
@@ -427,6 +883,18 @@ let homes = [
         "location": "Sofia",
         "booked": 1,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 40,
@@ -438,6 +906,18 @@ let homes = [
         "location": "Sofia",
         "booked": 34,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 41,
@@ -449,6 +929,18 @@ let homes = [
         "location": "Sofia",
         "booked": 92,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 42,
@@ -460,6 +952,18 @@ let homes = [
         "location": "Sofia",
         "booked": 23,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 43,
@@ -471,6 +975,18 @@ let homes = [
         "location": "Sofia",
         "booked": 118,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 44,
@@ -482,6 +998,18 @@ let homes = [
         "location": "Sofia",
         "booked": 43,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 45,
@@ -493,6 +1021,18 @@ let homes = [
         "location": "Sofia",
         "booked": 29,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 46,
@@ -504,6 +1044,18 @@ let homes = [
         "location": "Sofia",
         "booked": 98,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 47,
@@ -515,6 +1067,18 @@ let homes = [
         "location": "Sofia",
         "booked": 24,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 48,
@@ -526,6 +1090,18 @@ let homes = [
         "location": "Sofia",
         "booked": 64,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 49,
@@ -537,6 +1113,18 @@ let homes = [
         "location": "Sofia",
         "booked": 32,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 50,
@@ -548,6 +1136,18 @@ let homes = [
         "location": "Varna",
         "booked": 843,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 51,
@@ -559,6 +1159,18 @@ let homes = [
         "location": "Varna",
         "booked": 100,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 52,
@@ -570,6 +1182,18 @@ let homes = [
         "location": "Varna",
         "booked": 395,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 53,
@@ -581,6 +1205,18 @@ let homes = [
         "location": "Varna",
         "booked": 195,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 54,
@@ -592,6 +1228,18 @@ let homes = [
         "location": "Varna",
         "booked": 231,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 55,
@@ -603,6 +1251,18 @@ let homes = [
         "location": "Varna",
         "booked": 74,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 56,
@@ -614,6 +1274,18 @@ let homes = [
         "location": "Varna",
         "booked": 726,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 57,
@@ -625,6 +1297,18 @@ let homes = [
         "location": "Varna",
         "booked": 396,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 58,
@@ -636,6 +1320,18 @@ let homes = [
         "location": "Varna",
         "booked": 364,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 59,
@@ -647,6 +1343,18 @@ let homes = [
         "location": "Varna",
         "booked": 974,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 60,
@@ -658,6 +1366,18 @@ let homes = [
         "location": "Varna",
         "booked": 356,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 61,
@@ -669,6 +1389,18 @@ let homes = [
         "location": "Sofia",
         "booked": 942,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 62,
@@ -680,6 +1412,18 @@ let homes = [
         "location": "Sofia",
         "booked": 754,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 63,
@@ -691,6 +1435,18 @@ let homes = [
         "location": "Sofia",
         "booked": 246,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 64,
@@ -702,6 +1458,18 @@ let homes = [
         "location": "Sofia",
         "booked": 974,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 65,
@@ -713,6 +1481,18 @@ let homes = [
         "location": "Sofia",
         "booked": 356,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 66,
@@ -724,6 +1504,18 @@ let homes = [
         "location": "Sofia",
         "booked": 208,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 67,
@@ -735,6 +1527,18 @@ let homes = [
         "location": "Sofia",
         "booked": 287,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 68,
@@ -746,6 +1550,18 @@ let homes = [
         "location": "Sofia",
         "booked": 97,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 69,
@@ -757,6 +1573,18 @@ let homes = [
         "location": "Sofia",
         "booked": 46,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 70,
@@ -768,6 +1596,18 @@ let homes = [
         "location": "Sofia",
         "booked": 75,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 71,
@@ -779,6 +1619,18 @@ let homes = [
         "location": "Sofia",
         "booked": 35,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 72,
@@ -790,6 +1642,18 @@ let homes = [
         "location": "Sofia",
         "booked": 94,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 73,
@@ -801,6 +1665,18 @@ let homes = [
         "location": "Sofia",
         "booked": 244,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 74,
@@ -812,6 +1688,18 @@ let homes = [
         "location": "Sofia",
         "booked": 34,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 75,
@@ -823,6 +1711,18 @@ let homes = [
         "location": "Sofia",
         "booked": 932,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 76,
@@ -834,6 +1734,18 @@ let homes = [
         "location": "Varna",
         "booked": 76,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 77,
@@ -845,6 +1757,18 @@ let homes = [
         "location": "Varna",
         "booked": 27,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 78,
@@ -856,6 +1780,18 @@ let homes = [
         "location": "Varna",
         "booked": 65,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 79,
@@ -867,6 +1803,18 @@ let homes = [
         "location": "Varna",
         "booked": 23,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 80,
@@ -878,6 +1826,18 @@ let homes = [
         "location": "Varna",
         "booked": 403,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 81,
@@ -889,6 +1849,18 @@ let homes = [
         "location": "Varna",
         "booked": 493,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 82,
@@ -900,6 +1872,18 @@ let homes = [
         "location": "Varna",
         "booked": 322,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 83,
@@ -911,6 +1895,18 @@ let homes = [
         "location": "Varna",
         "booked": 70,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 84,
@@ -922,6 +1918,18 @@ let homes = [
         "location": "Varna",
         "booked": 229,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 85,
@@ -933,6 +1941,18 @@ let homes = [
         "location": "Varna",
         "booked": 549,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 86,
@@ -944,6 +1964,18 @@ let homes = [
         "location": "Varna",
         "booked": 493,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 87,
@@ -955,6 +1987,18 @@ let homes = [
         "location": "Varna",
         "booked": 22,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 88,
@@ -966,6 +2010,18 @@ let homes = [
         "location": "Varna",
         "booked": 483,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 89,
@@ -977,6 +2033,18 @@ let homes = [
         "location": "Varna",
         "booked": 93,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 90,
@@ -988,6 +2056,18 @@ let homes = [
         "location": "Varna",
         "booked": 234,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 91,
@@ -999,6 +2079,18 @@ let homes = [
         "location": "Sofia",
         "booked": 932,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 92,
@@ -1010,6 +2102,18 @@ let homes = [
         "location": "Varna",
         "booked": 494,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 93,
@@ -1021,6 +2125,18 @@ let homes = [
         "location": "Sofia",
         "booked": 643,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 94,
@@ -1032,6 +2148,18 @@ let homes = [
         "location": "Sofia",
         "booked": 564,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 95,
@@ -1043,6 +2171,18 @@ let homes = [
         "location": "Sofia",
         "booked": 244,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 96,
@@ -1054,6 +2194,18 @@ let homes = [
         "location": "Sofia",
         "booked": 2231,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 97,
@@ -1065,6 +2217,18 @@ let homes = [
         "location": "Varna",
         "booked": 121,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 98,
@@ -1076,6 +2240,18 @@ let homes = [
         "location": "Varna",
         "booked": 224,
         "pets": true,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 99,
@@ -1087,6 +2263,18 @@ let homes = [
         "location": "Varna",
         "booked": 3335,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": true,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
     {
         "id": 100,
@@ -1098,5 +2286,17 @@ let homes = [
         "location": "Varna",
         "booked": 54,
         "pets": false,
+        "equipment": {
+            "parking": false,
+            "swimmingPool": false,
+            "smoking": true,
+            "bath": false,
+            "airConditioning": true,
+            "wifi": true,
+            "tv": true,
+            "coffeeMachine": true,
+            "accessibility": false,
+            "basicAmenities": true,
+        }
     },
 ];
